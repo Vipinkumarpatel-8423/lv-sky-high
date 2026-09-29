@@ -1,3 +1,4 @@
+
 "use client";
 
 import {
@@ -9,16 +10,20 @@ import {
 
 export default function Hero() {
   return (
-    <section className="relative">
+    <section className="relative w-full overflow-visible">
       {/* ================= HERO ================= */}
       <div
         className="
           relative
-          min-h-[560px]
+          min-h-[620px]
           overflow-visible
           bg-cover
           bg-center
           bg-no-repeat
+
+          sm:min-h-[600px]
+          md:min-h-[580px]
+          lg:min-h-[560px]
         "
         style={{
           backgroundImage: "url('/images/hero/travel-hero.jpg')",
@@ -28,16 +33,48 @@ export default function Hero() {
         <div className="absolute inset-0 bg-dark/55" />
 
         {/* Hero Content */}
-        <div className="relative z-10 mx-auto flex min-h-[560px] max-w-[1180px] items-center px-5 py-24 sm:px-8 lg:px-5">
-          <div className="max-w-[650px]">
+        <div
+          className="
+            relative
+            z-10
+            mx-auto
+            flex
+            min-h-[620px]
+            w-full
+            max-w-[1180px]
+            items-center
+            px-5
+            pb-[150px]
+            pt-20
+
+            sm:min-h-[600px]
+            sm:px-8
+            sm:pb-[145px]
+            sm:pt-24
+
+            md:pb-[135px]
+
+            lg:min-h-[560px]
+            lg:px-5
+            lg:pb-[125px]
+            lg:pt-24
+          "
+        >
+          <div
+            className="
+              w-full
+              max-w-[650px]
+            "
+          >
             {/* Small Heading */}
             <p
               className="
                 mb-3
                 font-script
-                text-[16px]
+                text-[15px]
                 italic
                 text-secondary
+
                 sm:text-[18px]
               "
             >
@@ -48,18 +85,21 @@ export default function Hero() {
             <h1
               className="
                 max-w-[650px]
-                text-[36px]
+                text-[34px]
                 font-bold
                 leading-[1.08]
                 tracking-tight
                 text-white
+
+                xs:text-[36px]
                 sm:text-[52px]
+                md:text-[56px]
                 lg:text-[60px]
               "
             >
-              Where Exceptional   
+              Where Exceptional
               <br className="hidden sm:block" />
-                 Memories Begin
+              {" "}Memories Begin
             </h1>
 
             {/* Description */}
@@ -67,10 +107,12 @@ export default function Hero() {
               className="
                 my-4
                 max-w-[550px]
-                text-[15px]
-                leading-7
+                text-[14px]
+                leading-6
                 text-white/85
+
                 sm:text-[16px]
+                sm:leading-7
               "
             >
               Discover unforgettable destinations, romantic getaways
@@ -78,11 +120,25 @@ export default function Hero() {
             </p>
 
             {/* Buttons */}
-            <div className="mt-7 flex flex-wrap gap-4">
+            <div
+              className="
+                mt-7
+                flex
+                w-full
+                flex-row
+                gap-3
+
+                xs:flex-row
+                xs:flex-wrap
+                xs:gap-4
+              "
+            >
               <a
                 href="/contact"
                 className="
                   inline-flex
+                  min-h-[46px]
+                  w-full
                   items-center
                   justify-center
                   gap-2
@@ -97,6 +153,8 @@ export default function Hero() {
                   duration-300
                   hover:-translate-y-0.5
                   hover:opacity-90
+
+                  xs:w-auto
                 "
               >
                 Lets Get Started
@@ -107,6 +165,8 @@ export default function Hero() {
                 href="/destinations"
                 className="
                   inline-flex
+                  min-h-[46px]
+                  w-full
                   items-center
                   justify-center
                   gap-2
@@ -122,6 +182,8 @@ export default function Hero() {
                   duration-300
                   hover:bg-white
                   hover:text-dark
+
+                  xs:w-auto
                 "
               >
                 Discover More
@@ -138,18 +200,22 @@ export default function Hero() {
             bottom-0
             left-1/2
             z-20
-            w-[calc(100%-30px)]
+            w-[calc(100%-24px)]
             max-w-[1150px]
             -translate-x-1/2
             translate-y-1/2
+            
+            sm:w-[calc(100%-40px)]
           "
         >
           <div
             className="
               rounded-lg
               bg-white
-              p-4
-            //   shadow-[0_10px_35px_rgba(0,0,0,0.12)]
+              p-3
+              shadow-[0_10px_35px_rgba(0,0,0,0.12)]
+              mt-5
+              sm:mt-1
               sm:p-5
             "
           >
@@ -158,13 +224,15 @@ export default function Hero() {
                 grid
                 grid-cols-1
                 gap-3
-                md:grid-cols-2
+
+                sm:grid-cols-2
+
                 lg:grid-cols-[1.4fr_1fr_1fr_0.8fr_auto]
                 lg:items-end
               "
             >
               {/* Location */}
-              <div>
+              <div className="min-w-0">
                 <label
                   className="
                     mb-2
@@ -179,7 +247,7 @@ export default function Hero() {
                   <MapPin
                     size={16}
                     strokeWidth={1.8}
-                    className="text-secondary"
+                    className="shrink-0 text-secondary"
                   />
                   Location
                 </label>
@@ -231,7 +299,7 @@ export default function Hero() {
               </div>
 
               {/* Check In */}
-              <div>
+              <div className="min-w-0">
                 <label
                   className="
                     mb-2
@@ -246,7 +314,7 @@ export default function Hero() {
                   <CalendarDays
                     size={16}
                     strokeWidth={1.8}
-                    className="text-secondary"
+                    className="shrink-0 text-secondary"
                   />
                   Check In
                 </label>
@@ -256,6 +324,7 @@ export default function Hero() {
                   className="
                     h-[42px]
                     w-full
+                    min-w-0
                     rounded-md
                     border
                     border-gray-200
@@ -269,7 +338,7 @@ export default function Hero() {
               </div>
 
               {/* Check Out */}
-              <div>
+              <div className="min-w-0">
                 <label
                   className="
                     mb-2
@@ -284,7 +353,7 @@ export default function Hero() {
                   <CalendarDays
                     size={16}
                     strokeWidth={1.8}
-                    className="text-secondary"
+                    className="shrink-0 text-secondary"
                   />
                   Check Out
                 </label>
@@ -294,6 +363,7 @@ export default function Hero() {
                   className="
                     h-[42px]
                     w-full
+                    min-w-0
                     rounded-md
                     border
                     border-gray-200
@@ -307,7 +377,7 @@ export default function Hero() {
               </div>
 
               {/* Guests */}
-              <div>
+              <div className="min-w-0">
                 <label
                   className="
                     mb-2
@@ -366,6 +436,7 @@ export default function Hero() {
                 className="
                   flex
                   h-[42px]
+                  w-full
                   items-center
                   justify-center
                   gap-2
@@ -379,6 +450,8 @@ export default function Hero() {
                   duration-300
                   hover:-translate-y-0.5
                   hover:opacity-90
+
+                  lg:w-auto
                 "
               >
                 <Search size={15} />
@@ -390,7 +463,18 @@ export default function Hero() {
       </div>
 
       {/* Space for overlapping form */}
-      <div className="h-[70px] sm:h-[80px]" />
+      <div
+        className="
+          h-[145px]
+
+          sm:h-[125px]
+
+          md:h-[110px]
+
+          lg:h-[85px]
+        "
+      />
     </section>
   );
 }
+

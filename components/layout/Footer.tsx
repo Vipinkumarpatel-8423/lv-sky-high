@@ -72,7 +72,7 @@ export default function Footer() {
               <img
                 src="/images/logo/lv-sky-high-logo.png"
                 alt="LV SKY HIGH"
-                className="h-auto w-[155px] object-contain"
+                className="h-auto w-[90px] object-contain"
               />
             </Link>
 
