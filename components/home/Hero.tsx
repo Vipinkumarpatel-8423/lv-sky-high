@@ -65,7 +65,7 @@ export default function Hero() {
             {/* Description */}
             <p
               className="
-                my-5
+                my-4
                 max-w-[550px]
                 text-[15px]
                 leading-7
