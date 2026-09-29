@@ -1,26 +1,49 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@theme {
+  /* =========================
+     LV SKY HIGH COLORS
+  ========================= */
+
+  --color-primary: #0878C9;
+  --color-primary-dark: #07579A;
+  --color-primary-light: #EAF6FF;
+
+  --color-secondary: #FF7900;
+  --color-secondary-dark: #E85F00;
+  --color-secondary-light: #FFF3E8;
+
+  --color-dark: #14213D;
+  --color-muted: #64748B;
+
+  --color-white: #FFFFFF;
+  --color-light: #F5FAFE;
+  --color-border: #DCEAF4;
+
+
+  /* =========================
+     LV SKY HIGH FONT
+  ========================= */
+
+  --font-heading: "Montserrat", sans-serif;
+  --font-body: "Montserrat", sans-serif;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+* {
+  box-sizing: border-box;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  background: var(--color-white);
+  color: var(--color-dark);
+  font-family: var(--font-body);
+}
+
+.recommended-slider {
+  --recommended-card-width: 100%;
 }
