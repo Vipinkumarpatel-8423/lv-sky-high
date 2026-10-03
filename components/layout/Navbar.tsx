@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { ChevronDown, Menu, Search } from "lucide-react";
 import { useEffect, useState } from "react";
-import Image from "next/image";
+// import Image from "next/image";
 
 interface NavbarProps {
   onMenuClick: () => void;
@@ -131,13 +131,13 @@ export default function Navbar({ onMenuClick }: NavbarProps) {
       className="flex shrink-0 items-center"
       aria-label="LV SKY HIGH Home"
     >
-      <Image
+      <img
         src="/images/logo/lv-sky-high-logo.png"
         alt="LV SKY HIGH - Travel The World"
         width={150}
         height={110}
-        priority
-        className="h-auto w-[90px] object-contain sm:w-[90px]"
+        // priority
+        className="h-auto w-[110px] object-contain sm:w-[120px]"
       />
     </Link>
 
@@ -364,13 +364,13 @@ export default function Navbar({ onMenuClick }: NavbarProps) {
       className="flex shrink-0 items-center"
       aria-label="LV SKY HIGH Home"
     >
-      <Image
+      <img
         src="/images/logo/lv-sky-high-logo.png"
         alt="LV SKY HIGH - Travel The World"
         width={170}
         height={150}
-        priority
-        className="h-auto w-[90px] object-contain sm:w-[90px]"
+        // priority
+        className="h-auto w-[110px] object-contain sm:w-[120px]"
       />
     </Link>
 

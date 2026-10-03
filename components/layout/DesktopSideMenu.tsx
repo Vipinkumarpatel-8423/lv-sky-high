@@ -64,13 +64,13 @@ export default function DesktopSideMenu({
               aria-label="LV SKY HIGH Home"
             >
               {" "}
-              <Image
+              <img
                 src="/images/logo/lv-sky-high-logo.png"
                 alt="LV SKY HIGH - Travel The World"
                 width={180}
                 height={180}
-                priority
-                className=" h-auto w-[90px] object-contain xs:w-[90px] sm:w-[90px] "
+                // priority
+                className=" h-auto w-[110px] object-contain xs:w-[110px] sm:w-[120px] "
               />{" "}
             </Link>{" "}
             {/* Close Button */}{" "}

@@ -47,17 +47,17 @@ export default function MobileMenu({
             onClick={onClose}
             className="flex min-w-0 items-center"
           >
-            <Image
+            <img
               src="/images/logo/lv-sky-high-logo.png"
               alt="LV SKY HIGH - Travel The World"
               width={180}
               height={180}
-              priority
+              // priority
               className="
                 h-auto
-                w-[90px]
+                w-[110px]
                 object-contain
-                sm:w-[90px]
+                sm:w-[120px]
               "
             />
           </Link>
