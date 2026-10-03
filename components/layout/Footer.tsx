@@ -34,145 +34,146 @@ export default function Footer() {
             TOP CONTACT BAR
         ========================================= */}
         <div
+  className="
+    rounded-[14px]
+    border
+    border-[#0B7ACB]/20
+    bg-white
+    px-5
+    py-6
+    shadow-sm
+    sm:px-7
+    lg:px-5
+    lg:py-6
+  "
+>
+  <div
+    className="
+      flex
+      flex-col
+      gap-6
+      lg:flex-row
+      lg:items-center
+      lg:justify-between
+    "
+  >
+
+    {/* Logo */}
+    <Link
+      href="/"
+      className="
+        flex
+        shrink-0
+        items-center
+        lg:border-r
+        lg:border-[#0B7ACB]/20
+        lg:pr-10
+      "
+    >
+      <img
+        src="/images/logo/lv-sky-high-logo.png"
+        alt="LV SKY HIGH"
+        className="h-auto w-[90px] object-contain"
+      />
+    </Link>
+
+    {/* Contact Items */}
+    <div
+      className="
+        grid
+        grid-cols-1
+        gap-5
+        sm:grid-cols-2
+        lg:flex
+        lg:flex-1
+        lg:items-center
+        lg:justify-end
+        lg:gap-7
+      "
+    >
+
+      {/* Phone */}
+      <a
+        href="tel:07988522589"
+        className="flex items-center gap-3"
+      >
+        <span
           className="
-            rounded-[14px]
+            flex
+            h-10
+            w-10
+            shrink-0
+            items-center
+            justify-center
+            rounded-md
             border
-            border-dashed
-            border-white/20
-            px-5
-            py-6
-            sm:px-7
-            lg:px-5
-            lg:py-6
+            border-[#0B7ACB]
+            text-[#0B7ACB]
           "
         >
-          <div
-            className="
-              flex
-              flex-col
-              gap-6
-              lg:flex-row
-              lg:items-center
-              lg:justify-between
-            "
-          >
+          <Phone size={18} strokeWidth={1.8} />
+        </span>
 
-            {/* Logo */}
-            <Link
-              href="/"
-              className="
-                flex
-                shrink-0
-                items-center
-                lg:border-r
-                lg:border-white/20
-                lg:pr-10
-              "
-            >
-              <img
-                src="/images/logo/lv-sky-high-logo.png"
-                alt="LV SKY HIGH"
-                className="h-auto w-[90px] object-contain"
-              />
-            </Link>
+        <span className="text-[13px] text-[#123B5D]">
+          079885 22589
+        </span>
+      </a>
 
-            {/* Contact Items */}
-            <div
-              className="
-                grid
-                grid-cols-1
-                gap-5
-                sm:grid-cols-2
-                lg:flex
-                lg:flex-1
-                lg:items-center
-                lg:justify-end
-                lg:gap-7
-              "
-            >
+      {/* Email */}
+      <a
+        href="mailto:info@lvskyhigh.com"
+        className="flex items-center gap-3"
+      >
+        <span
+          className="
+            flex
+            h-10
+            w-10
+            shrink-0
+            items-center
+            justify-center
+            rounded-md
+            border
+            border-[#0B7ACB]
+            text-[#0B7ACB]
+          "
+        >
+          <Mail size={18} strokeWidth={1.8} />
+        </span>
 
-              {/* Phone */}
-              <a
-                href="tel:07988522589"
-                className="flex items-center gap-3"
-              >
-                <span
-                  className="
-                    flex
-                    h-10
-                    w-10
-                    shrink-0
-                    items-center
-                    justify-center
-                    rounded-md
-                    border
-                    border-primary
-                    text-primary
-                  "
-                >
-                  <Phone size={18} strokeWidth={1.8} />
-                </span>
+        <span className="text-[13px] text-[#123B5D]">
+          info@lvskyhigh.com
+        </span>
+      </a>
 
-                <span className="text-[13px] text-white/90">
-                  079885 22589
-                </span>
-              </a>
+      {/* Address */}
+      <div className="flex items-start gap-3">
+        <span
+          className="
+            flex
+            h-10
+            w-10
+            shrink-0
+            items-center
+            justify-center
+            rounded-md
+            border
+            border-[#0B7ACB]
+            text-[#0B7ACB]
+          "
+        >
+          <MapPin size={18} strokeWidth={1.8} />
+        </span>
 
-              {/* Email */}
-              <a
-                href="mailto:info@lvskyhigh.com"
-                className="flex items-center gap-3"
-              >
-                <span
-                  className="
-                    flex
-                    h-10
-                    w-10
-                    shrink-0
-                    items-center
-                    justify-center
-                    rounded-md
-                    border
-                    border-primary
-                    text-primary
-                  "
-                >
-                  <Mail size={18} strokeWidth={1.8} />
-                </span>
+        <span className="max-w-[210px] text-[13px] leading-5 text-[#123B5D]">
+          First Floor, Chandigarh City Centre,
+          B-44, W VIP Rd, Zirakpur, Punjab 140603
+        </span>
+      </div>
 
-                <span className="text-[13px] text-white/90">
-                  info@lvskyhigh.com
-                </span>
-              </a>
-
-              {/* Address */}
-              <div className="flex items-start gap-3">
-                <span
-                  className="
-                    flex
-                    h-10
-                    w-10
-                    shrink-0
-                    items-center
-                    justify-center
-                    rounded-md
-                    border
-                    border-primary
-                    text-primary
-                  "
-                >
-                  <MapPin size={18} strokeWidth={1.8} />
-                </span>
-
-                <span className="max-w-[210px] text-[13px] leading-5 text-white/90">
-                  First Floor, Chandigarh City Centre,
-                  B-44, W VIP Rd, Zirakpur, Punjab 140603
-                </span>
-              </div>
-
-            </div>
-          </div>
-        </div>
+    </div>
+  </div>
+</div>
 
         {/* =========================================
             MAIN FOOTER CONTENT
