@@ -9,8 +9,12 @@ export const navigationItems = [
     hasDropdown: true,
   },
   {
+    label: "India Tours",
+    href: "/india-tours",
+  },
+  {
     label: "International",
-    href: "/international",
+    href: "/International",
   },
   {
     label: "Honeymoon",

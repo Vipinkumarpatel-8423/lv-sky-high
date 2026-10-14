@@ -16,6 +16,9 @@ import { FaInstagramSquare } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
 import { FaFacebook } from "react-icons/fa";
 
+import type { ReactNode, AnchorHTMLAttributes } from "react";
+
+
 const galleryImages = [
   "/images/destinations/goa.jpg",
   "/images/destinations/maldives.jpg",
@@ -255,19 +258,19 @@ export default function Footer() {
 
             {/* Social */}
             <div className="mt-5 flex items-center gap-2">
-              <SocialIcon href="#" label="Facebook">
+              <SocialIcon href="https://www.facebook.com/share/1H1uyiFRhZ/" target="_blank" label="Facebook">
                 <FaFacebook size={15} />
               </SocialIcon>
 
-              <SocialIcon href="#" label="Twitter">
+              {/* <SocialIcon href="#" label="Twitter">
                 <FaTwitter size={15} />
-              </SocialIcon>
+              </SocialIcon> */}
 
-              <SocialIcon href="#" label="LinkedIn">
+              {/* <SocialIcon href="#" label="LinkedIn">
                 <FaFacebook size={15} />
-              </SocialIcon>
+              </SocialIcon> */}
 
-              <SocialIcon href="#" label="Instagram">
+              <SocialIcon href="https://instagram.com/lv_sky_high" target="_blank" label="Instagram">
                 <FaInstagramSquare size={15} />
               </SocialIcon>
             </div>
@@ -480,35 +483,61 @@ function FooterLink({
    SOCIAL ICON
 ========================================= */
 
+// function SocialIcon({
+//   href,
+//   label,
+//   children,
+// }: {
+//   href: string;
+//   label: string;
+//   children: React.ReactNode;
+// }) {
+//   return (
+//     <a
+//       href={href}
+//       aria-label={label}
+//       className="
+//         flex
+//         h-7
+//         w-7
+//         items-center
+//         justify-center
+//         rounded-full
+//         border
+//         border-white/70
+//         text-white
+//         transition-all
+//         duration-300
+//         hover:border-primary
+//         hover:bg-primary
+//         hover:text-white
+//       "
+//     >
+//       {children}
+//     </a>
+//   );
+// }
+
+
+
+type SocialIconProps = AnchorHTMLAttributes<HTMLAnchorElement> & {
+  href: string;
+  label: string;
+  children: ReactNode;
+};
+
 function SocialIcon({
   href,
   label,
   children,
-}: {
-  href: string;
-  label: string;
-  children: React.ReactNode;
-}) {
+  ...props
+}: SocialIconProps) {
   return (
     <a
       href={href}
       aria-label={label}
-      className="
-        flex
-        h-7
-        w-7
-        items-center
-        justify-center
-        rounded-full
-        border
-        border-white/70
-        text-white
-        transition-all
-        duration-300
-        hover:border-primary
-        hover:bg-primary
-        hover:text-white
-      "
+      rel={props.target === "_blank" ? "noopener noreferrer" : undefined}
+      {...props}
     >
       {children}
     </a>

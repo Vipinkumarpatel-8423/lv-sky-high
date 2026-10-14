@@ -1,19 +1,31 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+
 import {
   ArrowLeft,
   ArrowRight,
   ArrowUpRight,
   Bike,
   Fish,
+  X,
+  Clock3,
+  CalendarDays,
+  Users,
+  Lightbulb,
 } from "lucide-react";
+
+
 
 interface Activity {
   id: number;
   title: string;
   description: string;
   icon: React.ElementType;
+  duration: string;
+  bestTime: string;
+  suitableFor: string;
+  tips: string[];
 }
 
 const activities: Activity[] = [
@@ -21,50 +33,103 @@ const activities: Activity[] = [
     id: 1,
     title: "Tent Camping",
     description:
-      "Our personalized itinerary meticulously designed to cater to your personalized itineraries are meticulously.",
+      "Enjoy a memorable outdoor stay surrounded by nature, fresh air and scenic landscapes.",
     icon: Bike,
+    duration: "1–2 days",
+    bestTime: "Spring and autumn, depending on the destination",
+    suitableFor: "Friends, couples and adventure lovers",
+    tips: [
+      "Carry comfortable clothing and suitable footwear.",
+      "Check the weather before your trip.",
+      "Choose a safe, designated camping location.",
+    ],
   },
   {
     id: 2,
     title: "Fishing & Boat",
     description:
-      "Our personalized itinerary meticulously designed to cater to your personalized itineraries are meticulously.",
+      "Relax by the water and enjoy boating or fishing experiences at scenic destinations.",
     icon: Fish,
+    duration: "2–4 hours",
+    bestTime: "Early morning or late afternoon, subject to local conditions",
+    suitableFor: "Families, couples and nature lovers",
+    tips: [
+      "Follow local boating and fishing regulations.",
+      "Wear a life jacket when boating.",
+      "Check weather and water conditions beforehand.",
+    ],
   },
   {
     id: 3,
     title: "Mountain Trekking",
     description:
-      "Explore breathtaking mountain trails with carefully planned experiences made around you.",
+      "Explore breathtaking mountain trails and discover beautiful views along the way.",
     icon: Bike,
+    duration: "Half day to multiple days",
+    bestTime: "Depends on the trail and local weather",
+    suitableFor: "Nature lovers and adventure enthusiasts",
+    tips: [
+      "Wear proper trekking shoes.",
+      "Carry water, snacks and essential supplies.",
+      "Choose a trail that matches your fitness level.",
+    ],
   },
   {
     id: 4,
     title: "Beach Adventure",
     description:
-      "Enjoy unforgettable beach experiences, water activities and beautiful coastal destinations.",
+      "Enjoy coastal scenery, relaxing beach time and exciting seaside experiences.",
     icon: Fish,
+    duration: "Half day to a full day",
+    bestTime: "The destination's dry season, where applicable",
+    suitableFor: "Families, couples and groups of friends",
+    tips: [
+      "Use sunscreen and stay hydrated.",
+      "Follow beach safety flags and lifeguard instructions.",
+      "Check local sea conditions before water activities.",
+    ],
   },
   {
     id: 5,
     title: "City Exploration",
     description:
-      "Discover iconic places, local culture and unforgettable experiences across the world.",
+      "Discover iconic landmarks, local culture, food and memorable city experiences.",
     icon: Bike,
+    duration: "1–2 days",
+    bestTime: "Depends on the city's climate and events",
+    suitableFor: "Families, couples and culture enthusiasts",
+    tips: [
+      "Plan your main attractions in advance.",
+      "Wear comfortable walking shoes.",
+      "Check local transport and attraction timings.",
+    ],
   },
   {
     id: 6,
     title: "Water Sports",
     description:
-      "Add excitement to your holiday with thrilling water sports and memorable adventures.",
+      "Add excitement to your holiday with water-based adventures and coastal activities.",
     icon: Fish,
+    duration: "1–3 hours",
+    bestTime: "When local weather and water conditions are suitable",
+    suitableFor: "Adventure lovers and groups",
+    tips: [
+      "Use the safety equipment provided.",
+      "Follow your instructor's guidance.",
+      "Check age, swimming and activity requirements in advance.",
+    ],
   },
 ];
+
 
 export default function BestActivities() {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [visibleCards, setVisibleCards] = useState(2);
   const [isPaused, setIsPaused] = useState(false);
+
+const [selectedActivity, setSelectedActivity] =
+  useState<Activity | null>(null);
+
 
   const intervalRef = useRef<NodeJS.Timeout | null>(null);
 
@@ -145,6 +210,28 @@ export default function BestActivities() {
   useEffect(() => {
     setCurrentIndex((prev) => Math.min(prev, maxIndex));
   }, [maxIndex]);
+
+  
+useEffect(() => {
+  if (!selectedActivity) return;
+
+  const previousOverflow = document.body.style.overflow;
+
+  const handleKeyDown = (event: KeyboardEvent) => {
+    if (event.key === "Escape") {
+      setSelectedActivity(null);
+    }
+  };
+
+  document.body.style.overflow = "hidden";
+  window.addEventListener("keydown", handleKeyDown);
+
+  return () => {
+    document.body.style.overflow = previousOverflow;
+    window.removeEventListener("keydown", handleKeyDown);
+  };
+}, [selectedActivity]);
+
 
   return (
     <section
@@ -361,28 +448,32 @@ export default function BestActivities() {
                       </p>
 
                       {/* View Details */}
-                      <button
-                        type="button"
-                        className="
-                          mt-auto
-                          flex
-                          w-fit
-                          items-center
-                          gap-2
-                          border-b
-                          border-secondary
-                          pb-1
-                          text-[13px]
-                          font-medium
-                          text-secondary
-                          transition-all
-                          duration-300
-                          group-hover:gap-3
-                        "
-                      >
-                        View Details
-                        <ArrowRight size={15} strokeWidth={1.5} />
-                      </button>
+                      
+<button
+  type="button"
+  onClick={() => setSelectedActivity(activity)}
+  aria-haspopup="dialog"
+  className="
+    mt-auto
+    flex
+    w-fit
+    items-center
+    gap-2
+    border-b
+    border-secondary
+    pb-1
+    text-[13px]
+    font-medium
+    text-secondary
+    transition-all
+    duration-300
+    group-hover:gap-3
+  "
+>
+  View Details
+  <ArrowRight size={15} strokeWidth={1.5} />
+</button>
+
                     </article>
                   </div>
                 );
@@ -473,7 +564,148 @@ export default function BestActivities() {
             <ArrowUpRight size={16} />
           </a>
         </div>
+
+        
+      </div>
+
+
+{selectedActivity && (
+  <div
+    className="fixed inset-0 z-[100] flex items-center justify-center overflow-y-auto bg-dark/60 p-3 backdrop-blur-sm sm:p-6"
+    onClick={() => setSelectedActivity(null)}
+  >
+    <section
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="activity-modal-title"
+      onClick={(event) => event.stopPropagation()}
+      className="relative my-auto max-h-[92dvh] w-full max-w-2xl overflow-y-auto rounded-2xl bg-white shadow-2xl sm:rounded-3xl"
+    >
+      {/* Modal Header */}
+      <div className="sticky top-0 z-10 flex items-center justify-between gap-4 border-b border-gray-100 bg-white px-5 py-4 sm:px-7 sm:py-5">
+        <div>
+          <p className="text-xs font-semibold uppercase tracking-[0.18em] text-secondary">
+            Explore Experience
+          </p>
+          <h2
+            id="activity-modal-title"
+            className="mt-1 text-xl font-bold text-dark sm:text-2xl"
+          >
+            {selectedActivity.title}
+          </h2>
+        </div>
+
+        <button
+          type="button"
+          onClick={() => setSelectedActivity(null)}
+          aria-label="Close activity details"
+          className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-gray-100 text-dark transition hover:bg-secondary hover:text-white"
+        >
+          <X size={20} />
+        </button>
+      </div>
+
+      {/* Modal Content */}
+      <div className="space-y-6 p-5 sm:p-7">
+        <p className="text-sm leading-7 text-gray-600 sm:text-base">
+          {selectedActivity.description}
+        </p>
+
+        {/* Important Information */}
+        <div>
+          <h3 className="mb-4 text-lg font-bold text-dark">
+            Important Information
+          </h3>
+
+          <div className="grid grid-cols-1 gap-3 sm:grid-cols-2">
+            <div className="flex gap-3 rounded-xl border border-gray-100 bg-[#faf7f5] p-4">
+              <Clock3 className="mt-0.5 shrink-0 text-secondary" size={21} />
+              <div>
+                <p className="text-xs font-medium text-gray-500">
+                  Duration
+                </p>
+                <p className="mt-1 text-sm font-semibold leading-6 text-dark">
+                  {selectedActivity.duration}
+                </p>
+              </div>
+            </div>
+
+            <div className="flex gap-3 rounded-xl border border-gray-100 bg-[#faf7f5] p-4">
+              <CalendarDays
+                className="mt-0.5 shrink-0 text-secondary"
+                size={21}
+              />
+              <div>
+                <p className="text-xs font-medium text-gray-500">
+                  Best Time
+                </p>
+                <p className="mt-1 text-sm font-semibold leading-6 text-dark">
+                  {selectedActivity.bestTime}
+                </p>
+              </div>
+            </div>
+
+            <div className="flex gap-3 rounded-xl border border-gray-100 bg-[#faf7f5] p-4 sm:col-span-2">
+              <Users className="mt-0.5 shrink-0 text-secondary" size={21} />
+              <div>
+                <p className="text-xs font-medium text-gray-500">
+                  Suitable For
+                </p>
+                <p className="mt-1 text-sm font-semibold leading-6 text-dark">
+                  {selectedActivity.suitableFor}
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Tips */}
+        <div className="rounded-xl border border-secondary/20 bg-secondary/5 p-4 sm:p-5">
+          <div className="mb-3 flex items-center gap-2">
+            <Lightbulb className="text-secondary" size={21} />
+            <h3 className="font-bold text-dark">Important Tips</h3>
+          </div>
+
+          <ul className="space-y-3">
+            {selectedActivity.tips.map((tip, index) => (
+              <li
+                key={index}
+                className="flex items-start gap-3 text-sm leading-6 text-gray-600"
+              >
+                <span className="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-secondary/15 text-xs font-bold text-secondary">
+                  {index + 1}
+                </span>
+                <span>{tip}</span>
+              </li>
+            ))}
+          </ul>
+        </div>
+
+        {/* Footer Actions */}
+        <div className="flex flex-col-reverse gap-3 border-t border-gray-100 pt-5 sm:flex-row sm:justify-end">
+          <button
+            type="button"
+            onClick={() => setSelectedActivity(null)}
+            className="rounded-full border border-gray-200 px-6 py-3 text-sm font-semibold text-dark transition hover:bg-gray-50"
+          >
+            Close
+          </button>
+
+          <a
+            href="/contact"
+            className="inline-flex items-center justify-center gap-2 rounded-full bg-secondary px-6 py-3 text-sm font-semibold text-white transition hover:bg-secondary-dark"
+          >
+            Enquire Now
+            <ArrowUpRight size={17} />
+          </a>
+        </div>
       </div>
     </section>
+  </div>
+)}
+</section>
+
+
+    
   );
 }

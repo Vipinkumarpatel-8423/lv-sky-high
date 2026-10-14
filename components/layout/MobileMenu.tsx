@@ -55,9 +55,9 @@ export default function MobileMenu({
               // priority
               className="
                 h-auto
-                w-[110px]
+                w-[150px]
                 object-contain
-                sm:w-[120px]
+                sm:w-[140px]
               "
             />
           </Link>
@@ -118,12 +118,28 @@ export default function MobileMenu({
             "
           >
             <span>Destinations</span>
-            <Plus size={20} strokeWidth={1.7} />
           </Link> */}
 
+          <Link
+            href="/india-tours"
+            onClick={onClose}
+            className="
+              flex
+              h-[56px]
+              items-center
+              justify-between
+              border-b
+              border-gray-200
+              text-[16px]
+              text-dark
+            "
+          >
+            <span>India Tours</span>
+          </Link>
+
           {/* International */}
-          {/* <Link
-            href="/international"
+          <Link
+            href="/International"
             onClick={onClose}
             className="
               flex
@@ -137,11 +153,11 @@ export default function MobileMenu({
             "
           >
             <span>International</span>
-            <Plus size={20} strokeWidth={1.7} />
-          </Link> */}
+            {/* <Plus size={20} strokeWidth={1.7} /> */}
+          </Link>
 
           {/* Honeymoon */}
-          {/* <Link
+          <Link
             href="/honeymoon"
             onClick={onClose}
             className="
@@ -156,8 +172,8 @@ export default function MobileMenu({
             "
           >
             <span>Honeymoon</span>
-            <Plus size={20} strokeWidth={1.7} />
-          </Link> */}
+            {/* <Plus size={20} strokeWidth={1.7} /> */}
+          </Link>
 
           {/* About */}
           <Link

@@ -47,3 +47,37 @@ body {
 .recommended-slider {
   --recommended-card-width: 100%;
 }
+
+
+
+/* LV Sky High - Custom Modal Scrollbar */
+.custom-modal-scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: #0878c9 #eaf6ff;
+  overscroll-behavior: contain;
+}
+
+/* Chrome, Edge, Safari */
+.custom-modal-scrollbar::-webkit-scrollbar {
+  width: 7px;
+}
+
+.custom-modal-scrollbar::-webkit-scrollbar-track {
+  background: #eaf6ff;
+  border-radius: 999px;
+  margin-block: 12px;
+}
+
+.custom-modal-scrollbar::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #0878c9, #ff7900);
+  border-radius: 999px;
+  border: 1px solid #eaf6ff;
+}
+
+.custom-modal-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #07579a;
+}
+
+.custom-modal-scrollbar::-webkit-scrollbar-corner {
+  background: transparent;
+}

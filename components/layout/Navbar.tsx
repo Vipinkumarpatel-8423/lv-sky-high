@@ -13,30 +13,57 @@ export default function Navbar({ onMenuClick }: NavbarProps) {
   const [scrollY, setScrollY] = useState(0);
   const [isScrollingUp, setIsScrollingUp] = useState(false);
 
-  useEffect(() => {
-    let lastScrollY = window.scrollY;
+  // useEffect(() => {
+  //   let lastScrollY = window.scrollY;
 
-    const handleScroll = () => {
-      const currentScrollY = window.scrollY;
+  //   const handleScroll = () => {
+  //     const currentScrollY = window.scrollY;
 
-      if (currentScrollY > lastScrollY) {
-        // Scrolling Down
-        setIsScrollingUp(false);
-      } else if (currentScrollY < lastScrollY) {
-        // Scrolling Up
-        setIsScrollingUp(true);
-      }
+  //     if (currentScrollY > lastScrollY) {
+  //       // Scrolling Down
+  //       setIsScrollingUp(false);
+  //     } else if (currentScrollY < lastScrollY) {
+  //       // Scrolling Up
+  //       setIsScrollingUp(true);
+  //     }
 
-      setScrollY(currentScrollY);
-      lastScrollY = currentScrollY;
-    };
+  //     setScrollY(currentScrollY);
+  //     lastScrollY = currentScrollY;
+  //   };
 
-    window.addEventListener("scroll", handleScroll, { passive: true });
+  //   window.addEventListener("scroll", handleScroll, { passive: true });
 
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
+  //   return () => {
+  //     window.removeEventListener("scroll", handleScroll);
+  //   };
+  // }, []);
+
+
+useEffect(() => {
+  let lastScrollY = window.scrollY;
+
+  const handleScroll = () => {
+    const currentScrollY = window.scrollY;
+
+    if (currentScrollY > lastScrollY) {
+      // Scrolling down
+      setIsScrollingUp(false);
+    } else if (currentScrollY < lastScrollY) {
+      // Scrolling up
+      setIsScrollingUp(currentScrollY <= 20);
+    }
+
+    setScrollY(currentScrollY);
+    lastScrollY = currentScrollY;
+  };
+
+  window.addEventListener("scroll", handleScroll, { passive: true });
+
+  return () => {
+    window.removeEventListener("scroll", handleScroll);
+  };
+}, []);
+
 
   /*
    * Compact navbar:
@@ -91,21 +118,22 @@ export default function Navbar({ onMenuClick }: NavbarProps) {
 
               {/* Social */}
               <div className="flex items-center gap-5 font-semibold">
-                <a href="#" aria-label="Facebook">
+                <a href="https://www.facebook.com/share/1H1uyiFRhZ/" target="_blank" aria-label="Facebook">
                   f
                 </a>
 
-                <a href="#" aria-label="Twitter">
+                {/* <a href="https://twitter.com/lv_sky_high" target="_blank" aria-label="Twitter">
                   X
                 </a>
-
-                <a href="#" aria-label="LinkedIn">
+                <a href="https://www.linkedin.com/in/lv-sky-high-1b2a4b1b2/" target="_blank" aria-label="LinkedIn">
                   in
-                </a>
+                </a> */}
 
-                <a href="#" aria-label="Instagram">
+                <a href="https://www.instagram.com/lv_sky_high/" target="_blank" aria-label="Instagram">
                   ◎
                 </a>
+
+               
               </div>
             </div>
           </div>
@@ -137,7 +165,7 @@ export default function Navbar({ onMenuClick }: NavbarProps) {
         width={150}
         height={110}
         // priority
-        className="h-auto w-[110px] object-contain sm:w-[120px]"
+        className="h-auto w-[140px] object-contain sm:w-[150px]"
       />
     </Link>
 
@@ -167,22 +195,31 @@ export default function Navbar({ onMenuClick }: NavbarProps) {
                 className="flex items-center gap-1 text-[15px] font-medium text-dark transition hover:text-primary"
               >
                 Destinations
-                <ChevronDown size={16} />
               </Link> */}
 
-              {/* <Link
-                href="/international"
+               <Link
+                href="/india-tours"
+                className="flex items-center gap-1 text-[15px] font-medium text-dark transition hover:text-primary"
+              >
+                 India Tours
+                {/* <ChevronDown size={16} /> */}
+              </Link>
+
+              
+
+              <Link
+                href="/International"
                 className="text-[15px] font-medium text-dark transition hover:text-primary"
               >
                 International
-              </Link> */}
+              </Link>
 
-              {/* <Link
+              <Link
                 href="/honeymoon"
                 className="text-[15px] font-medium text-dark transition hover:text-primary"
               >
                 Honeymoon
-              </Link> */}
+              </Link>
 
               <Link
                 href="/about"
@@ -202,7 +239,7 @@ export default function Navbar({ onMenuClick }: NavbarProps) {
             {/* Right Buttons */}
             <div className="flex items-center gap-4">
               {/* Search */}
-              <button
+              {/* <button
                 type="button"
                 className="
                   flex
@@ -221,7 +258,7 @@ export default function Navbar({ onMenuClick }: NavbarProps) {
                 aria-label="Search"
               >
                 <Search size={22} strokeWidth={1.8} />
-              </button>
+              </button> */}
 
               {/* Menu */}
               <button
@@ -370,7 +407,7 @@ export default function Navbar({ onMenuClick }: NavbarProps) {
         width={170}
         height={150}
         // priority
-        className="h-auto w-[110px] object-contain sm:w-[120px]"
+        className="h-auto w-[140px] object-contain sm:w-[150px]"
       />
     </Link>
 
@@ -388,22 +425,30 @@ export default function Navbar({ onMenuClick }: NavbarProps) {
         className="flex items-center gap-1 text-[15px] font-medium text-dark transition hover:text-primary"
       >
         Destinations
-        <ChevronDown size={16} />
+        
       </Link> */}
 
-      {/* <Link
-        href="/international"
+       <Link
+                href="/india-tours"
+                className="flex items-center gap-1 text-[15px] font-medium text-dark transition hover:text-primary"
+              >
+                 India Tours
+                {/* <ChevronDown size={16} /> */}
+              </Link>
+
+      <Link
+        href="/International"
         className="text-[15px] font-medium text-dark transition hover:text-primary"
       >
         International
-      </Link> */}
+      </Link>
 
-      {/* <Link
+      <Link
         href="/honeymoon"
         className="text-[15px] font-medium text-dark transition hover:text-primary"
       >
         Honeymoon
-      </Link> */}
+      </Link>
 
       <Link
         href="/about"
@@ -422,7 +467,7 @@ export default function Navbar({ onMenuClick }: NavbarProps) {
 
     {/* Buttons */}
     <div className="flex items-center gap-4">
-      <button
+      {/* <button
         type="button"
         className="
           flex
@@ -441,7 +486,7 @@ export default function Navbar({ onMenuClick }: NavbarProps) {
         aria-label="Search"
       >
         <Search size={22} strokeWidth={1.8} />
-      </button>
+      </button> */}
 
       <button
         type="button"
