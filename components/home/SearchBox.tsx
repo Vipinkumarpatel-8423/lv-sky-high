@@ -459,7 +459,7 @@ export default function SearchBox() {
       <div className="absolute bottom-0 left-1/2 z-20 w-[calc(100%-24px)] max-w-[1150px] -translate-x-1/2 translate-y-1/2 sm:w-[calc(100%-40px)]">
         <form
           onSubmit={handleSubmit}
-          className="mt-15  rounded-xl border border-gray-100 bg-white p-4 shadow-[0_12px_40px_rgba(0,0,0,0.14)] sm:mt-1 sm:p-5 lg:p-6"
+          className="mt-20  rounded-xl border border-gray-100 bg-white p-4 shadow-[0_12px_40px_rgba(0,0,0,0.14)] sm:mt-1 sm:p-5 lg:p-6"
         >
           <div className="mb-4 flex items-center justify-between gap-3">
             <div>
