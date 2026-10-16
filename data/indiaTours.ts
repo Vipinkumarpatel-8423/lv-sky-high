@@ -8144,6 +8144,843 @@ export const destinationDetails: DestinationInfo[] = [
 },
 
 
+// Ooty 
+
+{
+  slug: "ooty",
+  name: "Ooty",
+  image: "/images/india-tours/ooty.jpg",
+
+  heroTitle: "Explore the Scenic Hills of Ooty",
+
+  heroDescription:
+    "Discover the beautiful Nilgiri hills of Ooty, surrounded by lush tea gardens, misty mountain viewpoints, peaceful lakes and the famous Nilgiri Mountain Railway.",
+
+  whyVisit:
+    "Ooty (Udhagamandalam) sits in the Nilgiri hills of Tamil Nadu, known for its tea gardens, Ooty Lake for boating, the Government Botanical Garden, and the Nilgiri Mountain Railway — a UNESCO World Heritage narrow-gauge toy train running from Mettupalayam. Given its closeness to Coorg, Mysore, Kodaikanal and Wayanad, most Ghumega India itineraries combine Ooty with one or more of these South India hill destinations.",
+
+  bestTime:
+    "October–June covers most of the comfortable season, with April–June (the Ooty summer festival period) especially busy given the cooler relief it offers from the plains below. July–September is monsoon season with heavier rain.",
+
+  idealDuration:
+    "A short Ooty-only trip works in 2 nights. Combining Ooty with Coorg, Mysore or Kodaikanal for a fuller South India hill circuit typically needs 5–7 nights.",
+
+  howToReach:
+    "Coimbatore Airport is the nearest airport with wider connectivity, roughly 2.5–3 hours by road via Mettupalayam and the Nilgiri ghat road. The Nilgiri Mountain Railway toy train also runs from Mettupalayam up to Ooty as a scenic alternative for part of the journey.",
+
+  packageCount: 6,
+
+  packages: [
+    {
+      id: "ooty-honeymoon-special",
+      title: "Ooty Honeymoon Special",
+      duration: "2 Nights 3 Days",
+      places: ["Ooty", "Ooty Lake", "Botanical Garden"],
+      description:
+        "An Ooty itinerary tailored for honeymooners, featuring tea-garden views, peaceful mountain surroundings and romantic sightseeing experiences.",
+
+      itinerary: [
+        {
+          day: 1,
+          title: "Arrival in Ooty",
+          description:
+            "Arrive in Ooty, check in to your accommodation and enjoy a relaxing evening amid the beautiful Nilgiri hills.",
+        },
+        {
+          day: 2,
+          title: "Romantic Ooty Sightseeing",
+          description:
+            "Visit Ooty Lake, explore the Government Botanical Garden and enjoy scenic viewpoints and tea-garden surroundings.",
+        },
+        {
+          day: 3,
+          title: "Breakfast and Departure",
+          description:
+            "Enjoy breakfast and depart according to your onward travel arrangements.",
+        },
+      ],
+
+      inclusions: [
+        "Accommodation as confirmed",
+        "Transfers listed in the itinerary",
+        "Sightseeing specified in the package",
+        "Couple-friendly arrangements where confirmed",
+      ],
+
+      exclusions: [
+        "Flights and train tickets unless included",
+        "Special room decorations unless specified",
+        "Entry fees and boating charges unless included",
+        "Personal expenses and unlisted meals",
+      ],
+    },
+
+    {
+      id: "holiday-to-coorg-and-ooty",
+      title: "Holiday to Coorg and Ooty",
+      duration: "5 Nights 6 Days",
+      places: ["Coorg", "Ooty"],
+      description:
+        "Combines two of South India's best-known hill destinations, offering Coorg's coffee estates and Ooty's tea gardens, lakes and mountain scenery.",
+
+      itinerary: [
+        {
+          day: 1,
+          title: "Arrival in Coorg",
+          description:
+            "Arrive in Coorg, check in to your accommodation and relax amid the coffee plantations.",
+        },
+        {
+          day: 2,
+          title: "Coorg Sightseeing",
+          description:
+            "Explore coffee estates, visit selected waterfalls and enjoy scenic viewpoints.",
+        },
+        {
+          day: 3,
+          title: "Coorg Leisure and Exploration",
+          description:
+            "Discover local attractions and enjoy the peaceful natural surroundings of Coorg.",
+        },
+        {
+          day: 4,
+          title: "Journey to Ooty",
+          description:
+            "Travel towards Ooty, allowing sufficient time for the road journey, and check in to your accommodation.",
+        },
+        {
+          day: 5,
+          title: "Ooty Sightseeing",
+          description:
+            "Visit Ooty Lake, explore the Government Botanical Garden and enjoy the scenic Nilgiri hills.",
+        },
+        {
+          day: 6,
+          title: "Breakfast and Departure",
+          description:
+            "Enjoy breakfast and depart for your onward destination.",
+        },
+      ],
+
+      inclusions: [
+        "Accommodation as confirmed",
+        "Intercity transfers listed in the itinerary",
+        "Sightseeing specified in the package",
+      ],
+
+      exclusions: [
+        "Flights and train tickets unless included",
+        "Entry fees and guide charges unless specified",
+        "Boating and optional activities unless included",
+        "Personal expenses and unlisted meals",
+      ],
+    },
+
+    {
+      id: "ooty-coorg-wayanad",
+      title: "Ooty with Coorg, Wayanad",
+      duration: "6 Nights 7 Days",
+      places: ["Ooty", "Coorg", "Wayanad"],
+      description:
+        "A three-region South India hill and forest circuit combining Ooty's tea gardens, Coorg's coffee estates and Wayanad's green landscapes.",
+
+      itinerary: [
+        {
+          day: 1,
+          title: "Arrival in Ooty",
+          description:
+            "Arrive in Ooty, check in to your accommodation and relax in the cool mountain atmosphere.",
+        },
+        {
+          day: 2,
+          title: "Ooty Sightseeing",
+          description:
+            "Explore Ooty Lake, the Government Botanical Garden and selected scenic viewpoints.",
+        },
+        {
+          day: 3,
+          title: "Journey to Coorg",
+          description:
+            "Travel towards Coorg and enjoy the changing landscapes along the way.",
+        },
+        {
+          day: 4,
+          title: "Coorg Exploration",
+          description:
+            "Visit coffee plantations, explore selected waterfalls and enjoy the natural surroundings.",
+        },
+        {
+          day: 5,
+          title: "Journey to Wayanad",
+          description:
+            "Travel to Wayanad and check in to your accommodation for a relaxing evening.",
+        },
+        {
+          day: 6,
+          title: "Wayanad Sightseeing",
+          description:
+            "Explore selected nature attractions, waterfalls and scenic viewpoints, subject to weather and local conditions.",
+        },
+        {
+          day: 7,
+          title: "Breakfast and Departure",
+          description:
+            "Enjoy breakfast and depart according to your onward travel arrangements.",
+        },
+      ],
+
+      inclusions: [
+        "Accommodation as confirmed",
+        "Intercity transfers listed in the itinerary",
+        "Sightseeing specified in the package",
+      ],
+
+      exclusions: [
+        "Flights and train tickets unless included",
+        "Entry fees and guide charges unless specified",
+        "Adventure activities and optional experiences unless included",
+        "Personal expenses and unlisted meals",
+      ],
+    },
+
+    {
+      id: "coorg-ooty-kodaikanal",
+      title: "Coorg, Ooty and Kodaikanal",
+      duration: "6 Nights 7 Days",
+      places: ["Coorg", "Ooty", "Kodaikanal"],
+      description:
+        "A wider three-hill-station South India circuit featuring coffee plantations, tea gardens, misty valleys and beautiful mountain landscapes.",
+
+      itinerary: [
+        {
+          day: 1,
+          title: "Arrival in Coorg",
+          description:
+            "Arrive in Coorg, check in to your accommodation and relax amid the green hills.",
+        },
+        {
+          day: 2,
+          title: "Coorg Sightseeing",
+          description:
+            "Explore coffee estates, visit selected waterfalls and enjoy scenic viewpoints.",
+        },
+        {
+          day: 3,
+          title: "Journey to Ooty",
+          description:
+            "Travel towards Ooty, allowing sufficient time for the road journey and check in to your hotel.",
+        },
+        {
+          day: 4,
+          title: "Ooty Exploration",
+          description:
+            "Visit Ooty Lake, the Government Botanical Garden and selected Nilgiri viewpoints.",
+        },
+        {
+          day: 5,
+          title: "Journey to Kodaikanal",
+          description:
+            "Continue towards Kodaikanal, allowing sufficient time for the intercity road journey.",
+        },
+        {
+          day: 6,
+          title: "Kodaikanal Sightseeing",
+          description:
+            "Explore Kodaikanal Lake, Coaker's Walk and selected local attractions.",
+        },
+        {
+          day: 7,
+          title: "Breakfast and Departure",
+          description:
+            "Enjoy breakfast and begin your onward journey.",
+        },
+      ],
+
+      inclusions: [
+        "Accommodation as confirmed",
+        "Intercity transfers listed in the itinerary",
+        "Sightseeing specified in the package",
+      ],
+
+      exclusions: [
+        "Flights and train tickets unless included",
+        "Entry fees and guide charges unless specified",
+        "Boating and optional activities unless included",
+        "Personal expenses and unlisted meals",
+      ],
+    },
+
+    {
+      id: "mysore-coorg-ooty",
+      title: "Mysore, Coorg and Ooty",
+      duration: "6 Nights 7 Days",
+      places: ["Mysore", "Coorg", "Ooty"],
+      description:
+        "Combines the palace city of Mysore with Coorg's coffee plantations and Ooty's scenic hill-station attractions.",
+
+      itinerary: [
+        {
+          day: 1,
+          title: "Arrival in Mysore",
+          description:
+            "Arrive in Mysore, check in to your accommodation and explore the local surroundings.",
+        },
+        {
+          day: 2,
+          title: "Mysore Heritage Sightseeing",
+          description:
+            "Visit Mysore Palace and explore selected cultural and heritage attractions.",
+        },
+        {
+          day: 3,
+          title: "Journey to Coorg",
+          description:
+            "Travel to Coorg, check in to your accommodation and enjoy the peaceful plantation surroundings.",
+        },
+        {
+          day: 4,
+          title: "Coorg Sightseeing",
+          description:
+            "Explore coffee estates, visit selected waterfalls and enjoy scenic viewpoints.",
+        },
+        {
+          day: 5,
+          title: "Journey to Ooty",
+          description:
+            "Travel towards Ooty and settle into your accommodation after the road journey.",
+        },
+        {
+          day: 6,
+          title: "Ooty Sightseeing",
+          description:
+            "Explore Ooty Lake, the Government Botanical Garden and nearby mountain viewpoints.",
+        },
+        {
+          day: 7,
+          title: "Breakfast and Departure",
+          description:
+            "Enjoy breakfast and depart for your onward destination.",
+        },
+      ],
+
+      inclusions: [
+        "Accommodation as confirmed",
+        "Intercity transfers listed in the itinerary",
+        "Sightseeing specified in the package",
+      ],
+
+      exclusions: [
+        "Flights and train tickets unless included",
+        "Entry fees and guide charges unless specified",
+        "Boating and optional activities unless included",
+        "Personal expenses and unlisted meals",
+      ],
+    },
+
+    {
+      id: "ooty-delights-of-south",
+      title: "Ooty with Delights of South",
+      duration: "7 Nights 8 Days",
+      places: ["Bangalore", "Mysore", "Coorg", "Ooty"],
+      description:
+        "A broader South India itinerary featuring Ooty, Mysore's royal heritage and Coorg's beautiful coffee-growing hills.",
+
+      itinerary: [
+        {
+          day: 1,
+          title: "Arrival in Bangalore",
+          description:
+            "Arrive in Bangalore and explore selected local attractions according to your arrival time.",
+        },
+        {
+          day: 2,
+          title: "Bangalore to Mysore",
+          description:
+            "Travel to Mysore, check in to your accommodation and explore the city surroundings.",
+        },
+        {
+          day: 3,
+          title: "Mysore Sightseeing",
+          description:
+            "Visit Mysore Palace and explore selected cultural and heritage attractions.",
+        },
+        {
+          day: 4,
+          title: "Journey to Coorg",
+          description:
+            "Travel towards Coorg and relax amid its coffee plantations and green hills.",
+        },
+        {
+          day: 5,
+          title: "Coorg Exploration",
+          description:
+            "Visit selected waterfalls, coffee estates and scenic viewpoints.",
+        },
+        {
+          day: 6,
+          title: "Journey to Ooty",
+          description:
+            "Travel towards Ooty and check in to your accommodation.",
+        },
+        {
+          day: 7,
+          title: "Ooty Sightseeing",
+          description:
+            "Explore Ooty Lake, the Government Botanical Garden and selected scenic viewpoints.",
+        },
+        {
+          day: 8,
+          title: "Breakfast and Departure",
+          description:
+            "Enjoy breakfast and depart according to your onward travel arrangements.",
+        },
+      ],
+
+      inclusions: [
+        "Accommodation as confirmed",
+        "Intercity transfers listed in the itinerary",
+        "Sightseeing specified in the package",
+      ],
+
+      exclusions: [
+        "Flights and train tickets unless included",
+        "Entry fees and guide charges unless specified",
+        "Boating and optional activities unless included",
+        "Personal expenses and unlisted meals",
+      ],
+    },
+  ],
+
+  honeymoonText:
+    "Ooty's tea-garden views and toy train are a popular South India honeymoon choice. Couples can enjoy scenic mountain viewpoints, peaceful gardens, lake visits and relaxing stays. Ooty can also be combined with Coorg or Mysore for a longer romantic holiday.",
+
+  familyText:
+    "Ooty is a popular family destination, with the toy train, Ooty Lake boating, botanical gardens and scenic mountain surroundings. Families can combine Ooty with Coorg and Mysore, while adjusting the itinerary to children's ages, travel time and weather conditions.",
+
+  groupText:
+    "Group and college-trip itineraries across Ooty, Coorg and Mysore can be arranged on request. Transport, accommodation and sightseeing can be planned according to group size, travel dates and the selected destinations.",
+
+  faqs: [
+    {
+      question: "Is the toy train ride included?",
+      answer:
+        "It depends on the specific itinerary and seat availability, which can be limited. Confirm with your travel expert well ahead of your travel dates whether the Nilgiri Mountain Railway ride is included or available as an add-on.",
+    },
+    {
+      question: "Should I combine Ooty with Coorg, Mysore or Kodaikanal?",
+      answer:
+        "A short Ooty trip usually works well in 2 nights. Combining Ooty with Coorg, Mysore or Kodaikanal creates a fuller South India holiday and typically requires 5–7 nights, depending on your chosen destinations.",
+    },
+    {
+      question: "Is Ooty crowded in summer?",
+      answer:
+        "Ooty can be busy from April to June, particularly during holidays and the summer festival period. Booking accommodation and popular activities in advance is recommended.",
+    },
+    {
+      question: "What is the best time to visit Ooty?",
+      answer:
+        "October to June generally offers comfortable conditions for sightseeing. April to June is especially popular for escaping the heat of the plains, while July to September brings monsoon rain that may affect outdoor plans.",
+    },
+    {
+      question: "How do I book or ask for a custom itinerary?",
+      answer:
+        "Share your travel dates, starting city, group size and preferred destinations with Ghumega India. Your Ooty itinerary and final pricing can then be planned according to availability and travel requirements.",
+    },
+  ],
+},
+
+// Kanyakumari 
+
+{
+  slug: "kanyakumari",
+  name: "Kanyakumari",
+  image: "/images/india-tours/kanyakumari.jpg",
+
+  heroTitle: "Explore the Southern Tip of India",
+
+  heroDescription:
+    "Discover Kanyakumari, where three seas meet, with spectacular sunrise and sunset views, coastal attractions, historic monuments and the iconic Vivekananda Rock Memorial.",
+
+  whyVisit:
+    "Kanyakumari sits at the southern tip of mainland India, popularly known as the meeting point of the Arabian Sea, Bay of Bengal and Indian Ocean, and known for its sunrise and sunset views over open water, the offshore Vivekananda Rock Memorial and the towering Thiruvalluvar Statue. Because it's at the far south of Tamil Nadu, most itineraries combine it with nearby temple towns like Madurai and Rameshwaram, a Tirupati pilgrimage stop, or a wider South India circuit into Kerala.",
+
+  bestTime:
+    "October–March is the most comfortable window for sightseeing. April–June gets hot and humid, and June–September brings the southwest monsoon.",
+
+  idealDuration:
+    "A Kanyakumari-only stop works in 1–2 nights. Combined circuits with Kerala, Madurai and Rameshwaram typically extend to 5–7 nights.",
+
+  howToReach:
+    "Thiruvananthapuram (Trivandrum) Airport in Kerala is the nearest major airport with wider connectivity, around 1.5–2 hours by road. Madurai Airport is also used for itineraries combined with that city.",
+
+  packageCount: 5,
+
+  packages: [
+    {
+      id: "kanyakumari-with-tirupati",
+      title: "Kanyakumari with Tirupati",
+      duration: "4 Nights 5 Days",
+      places: ["Kanyakumari", "Tirupati"],
+      description:
+        "Combines India's southern tip with a Tirupati pilgrimage stop, bringing coastal sightseeing and spiritual experiences together.",
+
+      itinerary: [
+        {
+          day: 1,
+          title: "Arrival in Kanyakumari",
+          description:
+            "Arrive in Kanyakumari, check in to your accommodation and enjoy the peaceful coastal atmosphere.",
+        },
+        {
+          day: 2,
+          title: "Kanyakumari Sightseeing",
+          description:
+            "Visit Vivekananda Rock Memorial, Thiruvalluvar Statue viewing points and selected local attractions. Enjoy sunrise or sunset views as weather permits.",
+        },
+        {
+          day: 3,
+          title: "Journey Towards Tirupati",
+          description:
+            "Travel towards Tirupati using suitable transport arrangements. Allow sufficient time for the long intercity journey.",
+        },
+        {
+          day: 4,
+          title: "Tirupati Pilgrimage",
+          description:
+            "Visit Tirumala Venkateswara Temple subject to darshan booking and availability. Explore other selected local attractions if time permits.",
+        },
+        {
+          day: 5,
+          title: "Departure",
+          description:
+            "Enjoy breakfast and depart according to your onward travel arrangements.",
+        },
+      ],
+
+      inclusions: [
+        "Accommodation as confirmed",
+        "Intercity transfers listed in the itinerary",
+        "Sightseeing specified in the package",
+      ],
+
+      exclusions: [
+        "Flights and train tickets unless included",
+        "Temple darshan tickets and special entry charges unless specified",
+        "Entry fees and guide charges unless included",
+        "Personal expenses and unlisted meals",
+      ],
+    },
+
+    {
+      id: "kanyakumari-holiday-with-kerala",
+      title: "Kanyakumari Holiday with Kerala",
+      duration: "5 Nights 6 Days",
+      places: ["Kanyakumari", "Trivandrum", "Kerala"],
+      description:
+        "Pairs Kanyakumari with a Kerala circuit, combining coastal landmarks, cultural attractions and relaxing South India experiences.",
+
+      itinerary: [
+        {
+          day: 1,
+          title: "Arrival in Trivandrum",
+          description:
+            "Arrive in Thiruvananthapuram, check in to your accommodation and explore selected local attractions.",
+        },
+        {
+          day: 2,
+          title: "Trivandrum Sightseeing",
+          description:
+            "Explore selected cultural attractions and local landmarks according to your schedule.",
+        },
+        {
+          day: 3,
+          title: "Journey to Kanyakumari",
+          description:
+            "Travel to Kanyakumari, check in to your accommodation and enjoy the coastal surroundings.",
+        },
+        {
+          day: 4,
+          title: "Kanyakumari Exploration",
+          description:
+            "Visit Vivekananda Rock Memorial, Thiruvalluvar Statue viewing points and other selected attractions.",
+        },
+        {
+          day: 5,
+          title: "Kerala Excursion",
+          description:
+            "Continue your Kerala holiday with a selected destination or a relaxed sightseeing day according to the confirmed itinerary.",
+        },
+        {
+          day: 6,
+          title: "Breakfast and Departure",
+          description:
+            "Enjoy breakfast and depart for your onward destination.",
+        },
+      ],
+
+      inclusions: [
+        "Accommodation as confirmed",
+        "Intercity transfers listed in the itinerary",
+        "Sightseeing specified in the package",
+      ],
+
+      exclusions: [
+        "Flights and train tickets unless included",
+        "Boat and ferry tickets unless specified",
+        "Entry fees and guide charges unless included",
+        "Personal expenses and unlisted meals",
+      ],
+    },
+
+    {
+      id: "madurai-rameshwaram-kanyakumari",
+      title: "Madurai Rameshwaram Kanyakumari Holiday",
+      duration: "5 Nights 6 Days",
+      places: ["Madurai", "Rameshwaram", "Kanyakumari"],
+      description:
+        "A three-stop Tamil Nadu temple-and-coast circuit combining historic temples, spiritual landmarks and beautiful coastal views.",
+
+      itinerary: [
+        {
+          day: 1,
+          title: "Arrival in Madurai",
+          description:
+            "Arrive in Madurai, check in to your accommodation and explore the local surroundings.",
+        },
+        {
+          day: 2,
+          title: "Madurai Temple Sightseeing",
+          description:
+            "Visit Meenakshi Amman Temple and explore selected cultural attractions according to your schedule.",
+        },
+        {
+          day: 3,
+          title: "Journey to Rameshwaram",
+          description:
+            "Travel to Rameshwaram and visit selected spiritual landmarks as time permits.",
+        },
+        {
+          day: 4,
+          title: "Rameshwaram Exploration",
+          description:
+            "Explore Ramanathaswamy Temple and other selected attractions, subject to local timings and temple regulations.",
+        },
+        {
+          day: 5,
+          title: "Journey to Kanyakumari",
+          description:
+            "Travel to Kanyakumari, check in to your accommodation and enjoy the coastal atmosphere.",
+        },
+        {
+          day: 6,
+          title: "Kanyakumari Sightseeing and Departure",
+          description:
+            "Enjoy sunrise views if timing permits, visit selected attractions and depart according to your onward arrangements.",
+        },
+      ],
+
+      inclusions: [
+        "Accommodation as confirmed",
+        "Intercity transfers listed in the itinerary",
+        "Sightseeing specified in the package",
+      ],
+
+      exclusions: [
+        "Flights and train tickets unless included",
+        "Temple special darshan and ritual charges unless specified",
+        "Entry fees and guide charges unless included",
+        "Personal expenses and unlisted meals",
+      ],
+    },
+
+    {
+      id: "incredible-south",
+      title: "Incredible South",
+      duration: "7 Nights 8 Days",
+      places: ["Chennai", "Madurai", "Rameshwaram", "Kanyakumari"],
+      description:
+        "A broader South India itinerary featuring Kanyakumari, historic temple towns and memorable coastal experiences.",
+
+      itinerary: [
+        {
+          day: 1,
+          title: "Arrival in Chennai",
+          description:
+            "Arrive in Chennai, check in to your accommodation and explore selected local attractions.",
+        },
+        {
+          day: 2,
+          title: "Chennai Sightseeing",
+          description:
+            "Explore selected cultural landmarks and city attractions according to your schedule.",
+        },
+        {
+          day: 3,
+          title: "Journey to Madurai",
+          description:
+            "Travel to Madurai and check in to your accommodation.",
+        },
+        {
+          day: 4,
+          title: "Madurai Exploration",
+          description:
+            "Visit Meenakshi Amman Temple and selected cultural attractions.",
+        },
+        {
+          day: 5,
+          title: "Journey to Rameshwaram",
+          description:
+            "Travel to Rameshwaram and explore selected spiritual landmarks.",
+        },
+        {
+          day: 6,
+          title: "Journey to Kanyakumari",
+          description:
+            "Continue towards Kanyakumari and relax by the coast after check-in.",
+        },
+        {
+          day: 7,
+          title: "Kanyakumari Sightseeing",
+          description:
+            "Visit Vivekananda Rock Memorial, explore coastal landmarks and enjoy sunrise or sunset views as weather permits.",
+        },
+        {
+          day: 8,
+          title: "Departure",
+          description:
+            "Enjoy breakfast and depart according to your onward travel arrangements.",
+        },
+      ],
+
+      inclusions: [
+        "Accommodation as confirmed",
+        "Intercity transfers listed in the itinerary",
+        "Sightseeing specified in the package",
+      ],
+
+      exclusions: [
+        "Flights and train tickets unless included",
+        "Entry fees and temple charges unless specified",
+        "Guide charges and optional activities unless included",
+        "Personal expenses and unlisted meals",
+      ],
+    },
+
+    {
+      id: "mystical-south",
+      title: "Mystical South",
+      duration: "7 Nights 8 Days",
+      places: ["Kerala", "Madurai", "Rameshwaram", "Kanyakumari"],
+      description:
+        "Another wide-ranging South India tour featuring Kanyakumari, combining Kerala's natural beauty with Tamil Nadu's spiritual and coastal attractions.",
+
+      itinerary: [
+        {
+          day: 1,
+          title: "Arrival in Kerala",
+          description:
+            "Arrive in Kerala at the designated airport or railway station and transfer to your confirmed accommodation.",
+        },
+        {
+          day: 2,
+          title: "Kerala Exploration",
+          description:
+            "Explore selected Kerala attractions according to the confirmed itinerary.",
+        },
+        {
+          day: 3,
+          title: "Kerala Leisure and Sightseeing",
+          description:
+            "Enjoy a relaxed day exploring local attractions and scenic surroundings.",
+        },
+        {
+          day: 4,
+          title: "Journey to Madurai",
+          description:
+            "Travel towards Madurai and check in to your accommodation.",
+        },
+        {
+          day: 5,
+          title: "Madurai and Rameshwaram",
+          description:
+            "Explore selected Madurai attractions and continue towards Rameshwaram as per the travel schedule.",
+        },
+        {
+          day: 6,
+          title: "Rameshwaram Exploration",
+          description:
+            "Visit Ramanathaswamy Temple and other selected spiritual landmarks.",
+        },
+        {
+          day: 7,
+          title: "Kanyakumari Sightseeing",
+          description:
+            "Travel to Kanyakumari, explore the coastal attractions and enjoy sunset views as weather permits.",
+        },
+        {
+          day: 8,
+          title: "Departure",
+          description:
+            "Enjoy breakfast and depart according to your onward travel arrangements.",
+        },
+      ],
+
+      inclusions: [
+        "Accommodation as confirmed",
+        "Intercity transfers listed in the itinerary",
+        "Sightseeing specified in the package",
+      ],
+
+      exclusions: [
+        "Flights and train tickets unless included",
+        "Entry fees and temple charges unless specified",
+        "Optional activities and guide charges unless included",
+        "Personal expenses and unlisted meals",
+      ],
+    },
+  ],
+
+  honeymoonText:
+    "A South India coast-and-temple circuit isn't a typical honeymoon route, but Kanyakumari can be tailored for couples wanting something different. Enjoy coastal sunsets, peaceful sightseeing and visits to iconic landmarks. Ask your travel expert to combine Kanyakumari with Kerala for a more relaxed romantic holiday.",
+
+  familyText:
+    "Kanyakumari's sunrise and sunset points and the Vivekananda Rock Memorial ferry suit families. Families can explore coastal attractions, cultural landmarks and nearby temple destinations while adjusting the pace to children's needs and ferry schedules.",
+
+  groupText:
+    "Group and pilgrimage-society itineraries covering Kanyakumari, Rameshwaram and Tirupati can be arranged on request. Transport, accommodation and sightseeing can be planned according to group size, travel dates and pilgrimage requirements.",
+
+  faqs: [
+    {
+      question: "Is the Vivekananda Rock Memorial ferry included?",
+      answer:
+        "The ferry is commonly part of Kanyakumari sightseeing, but inclusion depends on the specific package. Confirm with your travel expert whether ferry tickets are included or need to be purchased separately.",
+    },
+    {
+      question: "Can I really see the sun rise and set over the sea from Kanyakumari?",
+      answer:
+        "Kanyakumari is well known for its sunrise and sunset views over the surrounding waters. Visibility depends on weather conditions, so clear views are not guaranteed every day.",
+    },
+    {
+      question: "How far is Kanyakumari from Kerala's main cities?",
+      answer:
+        "Kanyakumari is accessible by road from Thiruvananthapuram in Kerala, generally around 1.5–2 hours depending on traffic and the starting point. Travel time from other Kerala cities varies considerably.",
+    },
+    {
+      question: "What is the best time to visit Kanyakumari?",
+      answer:
+        "October to March is generally the most comfortable period for sightseeing. April to June can be hot and humid, while June to September may bring monsoon rain.",
+    },
+    {
+      question: "How do I book or ask for a custom itinerary?",
+      answer:
+        "Share your travel dates, starting city, group size and preferred destinations with Ghumega India. Your Kanyakumari itinerary and final pricing can then be planned according to availability and travel requirements.",
+    },
+  ],
+},
+
+
+
+
 
 
 
