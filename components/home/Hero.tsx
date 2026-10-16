@@ -1,14 +1,6 @@
 "use client";
 
-
 import SearchBox from "@/components/home/SearchBox";
-
-import {
-  CalendarDays,
-  ChevronDown,
-  MapPin,
-  Search,
-} from "lucide-react";
 
 export default function Hero() {
   return (
@@ -46,7 +38,7 @@ export default function Hero() {
             max-w-[1180px]
             items-center
             px-5
-            pb-[150px]
+            pb-[180px]
             pt-20
 
             sm:min-h-[600px]
@@ -100,8 +92,7 @@ export default function Hero() {
               "
             >
               Where Exceptional
-              <br className="hidden sm:block" />
-              {" "}Memories Begin
+              <br className="hidden sm:block" /> Memories Begin
             </h1>
 
             {/* Description */}
@@ -117,46 +108,47 @@ export default function Hero() {
                 sm:leading-7
               "
             >
-              Discover unforgettable destinations, romantic getaways
-              and memorable holidays planned around you.
+              Discover unforgettable destinations, romantic getaways and
+              memorable holidays planned around you.
             </p>
 
             {/* Buttons */}
             <div
               className="
                 mt-7
-                flex
-                w-full
-                flex-row
-                gap-3
-
-                xs:flex-row
-                xs:flex-wrap
-                xs:gap-4
+    mb-6
+    flex
+    w-full
+    flex-col
+    gap-3
+    sm:mb-0
+    sm:w-auto
+    sm:flex-row
+    sm:gap-4
               "
             >
               <a
                 href="/contact"
                 className="
                   inline-flex
-                  min-h-[46px]
-                  w-full
-                  items-center
-                  justify-center
-                  gap-2
-                  rounded-full
-                  bg-secondary
-                  px-6
-                  py-3
-                  text-[13px]
-                  font-semibold
-                  text-white
-                  transition-all
-                  duration-300
-                  hover:-translate-y-0.5
-                  hover:opacity-90
-
-                  xs:w-auto
+      min-h-[46px]
+      w-full
+      items-center
+      justify-center
+      gap-2
+      whitespace-nowrap
+      rounded-full
+      bg-secondary
+      px-6
+      py-3
+      text-[13px]
+      font-semibold
+      text-white
+      transition-all
+      duration-300
+      hover:-translate-y-0.5
+      hover:opacity-90
+      sm:w-auto
                 "
               >
                 Lets Get Started
@@ -167,25 +159,25 @@ export default function Hero() {
                 href="/about"
                 className="
                   inline-flex
-                  min-h-[46px]
-                  w-full
-                  items-center
-                  justify-center
-                  gap-2
-                  rounded-full
-                  border
-                  border-white
-                  px-6
-                  py-3
-                  text-[13px]
-                  font-semibold
-                  text-white
-                  transition-all
-                  duration-300
-                  hover:bg-white
-                  hover:text-dark
-
-                  xs:w-auto
+      min-h-[46px]
+      w-full
+      items-center
+      justify-center
+      gap-2
+      whitespace-nowrap
+      rounded-full
+      border
+      border-white
+      px-6
+      py-3
+      text-[13px]
+      font-semibold
+      text-white
+      transition-all
+      duration-300
+      hover:bg-white
+      hover:text-dark
+      sm:w-auto
                 "
               >
                 Discover More
@@ -202,16 +194,12 @@ export default function Hero() {
       {/* Space for overlapping form */}
       <div
         className="
-          h-[145px]
-
-          sm:h-[125px]
-
-          md:h-[110px]
-
-          lg:h-[85px]
+          h-[260px]
+    sm:h-[240px]
+    md:h-[200px]
+    lg:h-[85px]
         "
       />
     </section>
   );
 }
-

@@ -50,7 +50,7 @@ export default function AboutSection({
         w-full
         overflow-hidden
         bg-white
-        ${compact ? "py-16 sm:py-20" : "py-40 sm:py-24 lg:py-28"}
+        ${compact ? "py-16 sm:py-20" : "py-5 sm:py-8 lg:py-10"}
       `}
     >
       {/* ==================================================

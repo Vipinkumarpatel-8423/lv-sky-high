@@ -2374,7 +2374,7 @@ export const destinationDetails: DestinationInfo[] = [
 {
   slug: "andaman-islands",
   name: "Andaman Islands",
-  image: "/images/india-tours/andaman-islands.jpg",
+  image: "/images/india-tours/andaman.jpg",
   heroTitle: "Discover the Beauty of Andaman Islands",
   heroDescription:
     "Experience turquoise waters, tropical beaches, island adventures and unforgettable coastal scenery with thoughtfully planned Andaman holiday packages from LV SKY HIGH.",
@@ -2661,7 +2661,7 @@ export const destinationDetails: DestinationInfo[] = [
 {
   slug: "chardham-yatra",
   name: "Chardham Yatra",
-  image: "/images/india-tours/chardham-yatra.jpg",
+  image: "/images/india-tours/chardham.jpg",
   heroTitle: "Experience the Sacred Chardham Yatra",
   heroDescription:
     "Plan a spiritual journey through Uttarakhand's revered Himalayan shrines with LV SKY HIGH. Explore pilgrimage packages, road itineraries and helicopter options subject to availability.",
@@ -8977,6 +8977,1951 @@ export const destinationDetails: DestinationInfo[] = [
     },
   ],
 },
+
+
+// Mysore 
+
+
+{
+  slug: "mysore",
+  name: "Mysore",
+  image: "/images/india-tours/mysore.jpg",
+
+  heroTitle: "Discover the Royal Charm of Mysore",
+
+  heroDescription:
+    "Explore Mysore's magnificent palaces, vibrant heritage, beautiful gardens and rich cultural traditions on a memorable South India holiday.",
+
+  whyVisit:
+    "Mysore, officially known as Mysuru, is famous for Mysore Palace, its royal heritage, sandalwood traditions and the annual Dasara festival. The city also offers Devaraja Market, Chamundi Hills and Brindavan Gardens. Mysore is an excellent base for combining cultural sightseeing with nearby destinations such as Coorg, Ooty and Bangalore.",
+
+  bestTime:
+    "October to March is generally a comfortable period for sightseeing, with relatively pleasant weather. The Dasara festival, usually held in September or October, is a particularly lively time to experience Mysore's cultural heritage, although crowds and accommodation demand can be higher.",
+
+  idealDuration:
+    "A Mysore-focused holiday usually needs 1–2 nights. Combining Mysore with Bangalore, Coorg or Ooty typically requires 4–6 nights, depending on your sightseeing preferences and travel pace.",
+
+  howToReach:
+    "Kempegowda International Airport in Bengaluru is a major gateway for travellers visiting Mysore, followed by a road or rail journey. Mysore also has its own railway station and a smaller airport with limited connectivity. Road and train options can be selected according to your starting city.",
+
+  packageCount: 5,
+
+  packages: [
+    {
+      id: "journey-bangalore-mysore-ooty",
+      title: "Journey to Bangalore, Mysore & Ooty",
+      duration: "4 Nights 5 Days",
+      places: ["Bangalore", "Mysore", "Ooty"],
+      description:
+        "A three-city South India holiday combining Bangalore's urban attractions, Mysore's royal heritage and Ooty's scenic hill stations.",
+
+      itinerary: [
+        {
+          day: 1,
+          title: "Arrival in Bangalore",
+          description:
+            "Arrive in Bangalore, check in to your hotel and explore selected city attractions as time permits.",
+        },
+        {
+          day: 2,
+          title: "Bangalore to Mysore",
+          description:
+            "Travel to Mysore and explore Mysore Palace or other local attractions according to your schedule.",
+        },
+        {
+          day: 3,
+          title: "Mysore Sightseeing",
+          description:
+            "Visit Chamundi Hills, Devaraja Market and Brindavan Gardens, subject to opening times.",
+        },
+        {
+          day: 4,
+          title: "Mysore to Ooty",
+          description:
+            "Travel towards Ooty and enjoy the hill scenery and local attractions.",
+        },
+        {
+          day: 5,
+          title: "Ooty and Departure",
+          description:
+            "Enjoy breakfast and proceed with your onward travel arrangements.",
+        },
+      ],
+
+      inclusions: [
+        "Accommodation as confirmed",
+        "Intercity transfers listed in the itinerary",
+        "Sightseeing specified in the package",
+      ],
+
+      exclusions: [
+        "Flights and train tickets unless included",
+        "Entry tickets and activity fees unless specified",
+        "Personal expenses and unlisted meals",
+        "Optional activities not mentioned in the package",
+      ],
+    },
+
+    {
+      id: "mysore-coorg-ooty",
+      title: "Mysore, Coorg and Ooty",
+      duration: "5 Nights 6 Days",
+      places: ["Mysore", "Coorg", "Ooty"],
+      description:
+        "Combines Mysore's royal attractions with Coorg's coffee plantations and Ooty's scenic mountain landscapes.",
+
+      itinerary: [
+        {
+          day: 1,
+          title: "Arrival in Mysore",
+          description:
+            "Arrive in Mysore, check in and explore nearby attractions at a relaxed pace.",
+        },
+        {
+          day: 2,
+          title: "Mysore Heritage Tour",
+          description:
+            "Visit Mysore Palace, Chamundi Hills and selected local attractions.",
+        },
+        {
+          day: 3,
+          title: "Journey to Coorg",
+          description:
+            "Travel to Coorg and enjoy its coffee-growing landscapes and peaceful surroundings.",
+        },
+        {
+          day: 4,
+          title: "Explore Coorg",
+          description:
+            "Visit selected viewpoints, gardens or waterfalls depending on the season and local conditions.",
+        },
+        {
+          day: 5,
+          title: "Travel to Ooty",
+          description:
+            "Proceed towards Ooty and enjoy its pleasant hill-station atmosphere.",
+        },
+        {
+          day: 6,
+          title: "Ooty and Departure",
+          description:
+            "Enjoy breakfast and depart according to your onward travel plan.",
+        },
+      ],
+
+      inclusions: [
+        "Accommodation as confirmed",
+        "Transfers listed in the itinerary",
+        "Sightseeing specified in the package",
+      ],
+
+      exclusions: [
+        "Flights and train tickets unless included",
+        "Entry fees and boating charges unless specified",
+        "Personal expenses and unlisted meals",
+        "Optional activities not mentioned in the package",
+      ],
+    },
+
+    {
+      id: "mysore-ooty-kodaikanal",
+      title: "Mysore, Ooty & Kodaikanal",
+      duration: "5 Nights 6 Days",
+      places: ["Mysore", "Ooty", "Kodaikanal"],
+      description:
+        "A wider South India circuit combining Mysore's royal heritage with two popular hill stations.",
+
+      itinerary: [
+        {
+          day: 1,
+          title: "Arrival in Mysore",
+          description:
+            "Arrive in Mysore and explore the city according to your arrival time.",
+        },
+        {
+          day: 2,
+          title: "Mysore Sightseeing",
+          description:
+            "Discover Mysore Palace, Chamundi Hills and other selected attractions.",
+        },
+        {
+          day: 3,
+          title: "Journey to Ooty",
+          description:
+            "Travel to Ooty and enjoy the hill-station surroundings.",
+        },
+        {
+          day: 4,
+          title: "Ooty Exploration",
+          description:
+            "Explore selected gardens, viewpoints and local attractions.",
+        },
+        {
+          day: 5,
+          title: "Travel to Kodaikanal",
+          description:
+            "Proceed to Kodaikanal, allowing sufficient time for the road journey.",
+        },
+        {
+          day: 6,
+          title: "Departure",
+          description:
+            "Enjoy breakfast and begin your onward journey.",
+        },
+      ],
+
+      inclusions: [
+        "Accommodation as confirmed",
+        "Intercity transfers listed in the itinerary",
+        "Sightseeing specified in the package",
+      ],
+
+      exclusions: [
+        "Flights and train tickets unless included",
+        "Entry fees and optional activities unless specified",
+        "Personal expenses and unlisted meals",
+        "Additional accommodation due to travel delays",
+      ],
+    },
+
+    {
+      id: "mysore-delights-of-south",
+      title: "Mysore with Delights of South",
+      duration: "6 Nights 7 Days",
+      places: ["Bangalore", "Mysore", "Coorg", "Ooty"],
+      description:
+        "A broader South India itinerary featuring Mysore alongside cultural attractions, coffee estates and scenic hill destinations.",
+
+      itinerary: [
+        {
+          day: 1,
+          title: "Arrival in Bangalore",
+          description:
+            "Arrive in Bangalore and explore selected city attractions.",
+        },
+        {
+          day: 2,
+          title: "Bangalore to Mysore",
+          description:
+            "Travel to Mysore and discover its royal heritage.",
+        },
+        {
+          day: 3,
+          title: "Mysore Sightseeing",
+          description:
+            "Visit Mysore Palace, Chamundi Hills and other selected attractions.",
+        },
+        {
+          day: 4,
+          title: "Mysore to Coorg",
+          description:
+            "Travel to Coorg and enjoy the region's coffee estates and natural scenery.",
+        },
+        {
+          day: 5,
+          title: "Coorg Exploration",
+          description:
+            "Explore selected local attractions, viewpoints and gardens.",
+        },
+        {
+          day: 6,
+          title: "Journey to Ooty",
+          description:
+            "Travel towards Ooty and enjoy the surrounding mountain scenery.",
+        },
+        {
+          day: 7,
+          title: "Departure",
+          description:
+            "Have breakfast and depart according to your travel arrangements.",
+        },
+      ],
+
+      inclusions: [
+        "Accommodation as confirmed",
+        "Transfers listed in the itinerary",
+        "Sightseeing specified in the package",
+      ],
+
+      exclusions: [
+        "Flights and train tickets unless included",
+        "Entry fees and activity charges unless specified",
+        "Personal expenses and unlisted meals",
+        "Optional activities not mentioned in the package",
+      ],
+    },
+
+    {
+      id: "short-holiday-coorg-mysore",
+      title: "Short Holiday to Coorg & Mysore",
+      duration: "3 Nights 4 Days",
+      places: ["Mysore", "Coorg"],
+      description:
+        "A shorter South India holiday pairing Mysore's palace heritage with Coorg's coffee plantations and peaceful landscapes.",
+
+      itinerary: [
+        {
+          day: 1,
+          title: "Arrival in Mysore",
+          description:
+            "Arrive in Mysore, check in and explore the city as time permits.",
+        },
+        {
+          day: 2,
+          title: "Mysore to Coorg",
+          description:
+            "Visit selected Mysore attractions before travelling to Coorg.",
+        },
+        {
+          day: 3,
+          title: "Coorg Sightseeing",
+          description:
+            "Explore coffee estates, viewpoints and selected local attractions.",
+        },
+        {
+          day: 4,
+          title: "Departure",
+          description:
+            "Enjoy breakfast and depart for your onward destination.",
+        },
+      ],
+
+      inclusions: [
+        "Accommodation as confirmed",
+        "Transfers listed in the itinerary",
+        "Sightseeing specified in the package",
+      ],
+
+      exclusions: [
+        "Flights and train tickets unless included",
+        "Entry fees and optional activity charges unless specified",
+        "Personal expenses and unlisted meals",
+        "Additional services not mentioned in the package",
+      ],
+    },
+  ],
+
+  honeymoonText:
+    "Mysore offers couples a cultural getaway with royal architecture, peaceful gardens and memorable sightseeing. It works particularly well as part of a longer honeymoon combining Coorg's nature retreats or Ooty's mountain scenery.",
+
+  familyText:
+    "Mysore is a family-friendly destination with its palace, gardens, markets and wildlife attractions nearby. Families can combine sightseeing with Coorg or Ooty, adjusting the itinerary for children's ages and travel time.",
+
+  groupText:
+    "Mysore is suitable for group holidays, educational tours and cultural trips. Group itineraries can combine palace visits, local heritage attractions and nearby South India destinations, subject to availability and group requirements.",
+
+  faqs: [
+    {
+      question: "Is Mysore Palace included in every package?",
+      answer:
+        "Mysore Palace sightseeing can be included according to the selected itinerary. Entry tickets, guided tours and special experiences should be confirmed before booking.",
+    },
+    {
+      question: "Is Dasara festival time a good time to visit?",
+      answer:
+        "Yes, Dasara is a popular time to experience Mysore's cultural celebrations. However, crowds and accommodation demand can be higher, so advance planning is recommended.",
+    },
+    {
+      question: "Should I combine Mysore with Coorg or Ooty?",
+      answer:
+        "Coorg is a good choice for coffee estates and nature, while Ooty offers hill-station scenery and gardens. You can choose one or both depending on your available days and travel preferences.",
+    },
+    {
+      question: "How many days are enough for Mysore?",
+      answer:
+        "One to two nights can suit a Mysore-focused trip. A longer South India circuit with Coorg, Ooty or Bangalore generally requires additional nights.",
+    },
+    {
+      question: "How do I book a customised itinerary?",
+      answer:
+        "Share your travel dates, starting city, group size and preferred destinations with LV SKY HIGH. Your itinerary and final pricing can then be planned according to availability and travel requirements.",
+    },
+  ],
+},
+
+// Bandhavgarh 
+
+
+{
+  slug: "bandhavgarh-tiger-reserve",
+  name: "Bandhavgarh",
+  image: "/images/india-tours/bandhavgarh-tiger-reserve.jpg",
+
+  heroTitle: "Explore the Wild Beauty of Bandhavgarh",
+
+  heroDescription:
+    "Discover the wilderness of Bandhavgarh National Park, famous for its tiger habitat, lush forests, grasslands and thrilling wildlife safari experiences.",
+
+  whyVisit:
+    "Bandhavgarh National Park in Madhya Pradesh is known for its sal forests, grasslands and historic Bandhavgarh Fort overlooking the reserve. Jeep safaris explore designated zones where visitors may encounter tigers, leopards, deer and a variety of birdlife. The destination can also be combined with Khajuraho for a wildlife-and-heritage holiday.",
+
+  bestTime:
+    "February to June is generally considered a favourable period for wildlife viewing as animals may gather near remaining water sources. Safari availability depends on park schedules, zone permissions and seasonal conditions. The core safari zones typically close during the monsoon, approximately July to mid-October, but exact dates vary by year.",
+
+  idealDuration:
+    "A focused Bandhavgarh safari trip usually requires 1–2 nights, allowing time for two or more safari drives subject to availability. Combining Bandhavgarh with Khajuraho or other destinations requires additional nights.",
+
+  howToReach:
+    "Jabalpur Airport is a major gateway for reaching Bandhavgarh, followed by a road transfer to the reserve. Umaria railway station is another option for travellers arriving by train, with onward road transport required to reach their accommodation and safari meeting point.",
+
+  packageCount: 3,
+
+  packages: [
+    {
+      id: "bandhavgarh-1-night-2-day",
+      title: "1 Night 2 Day Bandhavgarh Tour",
+      duration: "1 Night 2 Days",
+      places: [
+        "Bandhavgarh National Park",
+        "Bandhavgarh Safari Zone",
+      ],
+      description:
+        "A quick wildlife getaway with a short stay and a safari experience, subject to permit and vehicle availability.",
+
+      itinerary: [
+        {
+          day: 1,
+          title: "Arrival in Bandhavgarh",
+          description:
+            "Arrive near Bandhavgarh National Park, check in to your accommodation and prepare for your scheduled safari.",
+        },
+        {
+          day: 2,
+          title: "Safari and Departure",
+          description:
+            "Enjoy a pre-booked safari if available, then check out and begin your onward journey.",
+        },
+      ],
+
+      inclusions: [
+        "Accommodation for 1 night as confirmed",
+        "Meals according to the selected plan",
+        "Safari arrangements only as specified in the booking",
+        "Transfers only if included in the package",
+      ],
+
+      exclusions: [
+        "Flights and train tickets unless included",
+        "Safari permits and vehicle charges unless specified",
+        "Guide fees unless included",
+        "Personal expenses and unlisted meals",
+      ],
+    },
+
+    {
+      id: "bandhavgarh-2-night-3-day",
+      title: "2 Night 3 Day Bandhavgarh Tour",
+      duration: "2 Nights 3 Days",
+      places: [
+        "Bandhavgarh National Park",
+        "Designated Safari Zones",
+        "Local Nature Areas",
+      ],
+      description:
+        "A longer wildlife holiday with additional time for multiple safari drives and relaxing at your forest-side accommodation.",
+
+      itinerary: [
+        {
+          day: 1,
+          title: "Arrival and Leisure",
+          description:
+            "Arrive near Bandhavgarh, check in to your accommodation and enjoy the natural surroundings.",
+        },
+        {
+          day: 2,
+          title: "Bandhavgarh Wildlife Safaris",
+          description:
+            "Take scheduled morning or afternoon safaris according to confirmed permits and availability.",
+        },
+        {
+          day: 3,
+          title: "Final Safari or Departure",
+          description:
+            "Enjoy an additional safari if pre-booked and available, or have breakfast before departure.",
+        },
+      ],
+
+      inclusions: [
+        "Accommodation for 2 nights as confirmed",
+        "Meals according to the selected plan",
+        "Safari drives only as specified in the booking",
+        "Transfers only if included in the package",
+      ],
+
+      exclusions: [
+        "Flights and train tickets unless included",
+        "Safari permits and vehicle charges unless specified",
+        "Camera fees or other applicable charges",
+        "Personal expenses and unlisted meals",
+      ],
+    },
+
+    {
+      id: "bandhavgarh-with-khajuraho",
+      title: "Bandhavgarh with Khajuraho",
+      duration: "Customised Multi-Day Tour",
+      places: [
+        "Bandhavgarh National Park",
+        "Khajuraho Temples",
+      ],
+      description:
+        "Combines a Bandhavgarh wildlife safari with Khajuraho's celebrated temple architecture for a memorable nature-and-heritage holiday.",
+
+      itinerary: [
+        {
+          day: 1,
+          title: "Arrival in Bandhavgarh",
+          description:
+            "Arrive near Bandhavgarh National Park and check in to your accommodation.",
+        },
+        {
+          day: 2,
+          title: "Wildlife Safari",
+          description:
+            "Enjoy a scheduled safari subject to permits, zone availability and park operating conditions.",
+        },
+        {
+          day: 3,
+          title: "Travel to Khajuraho",
+          description:
+            "Continue towards Khajuraho, allowing sufficient time for the road journey.",
+        },
+        {
+          day: 4,
+          title: "Khajuraho Heritage Tour",
+          description:
+            "Explore selected Khajuraho temple complexes and local attractions according to opening hours.",
+        },
+        {
+          day: 5,
+          title: "Departure",
+          description:
+            "Enjoy breakfast and depart according to your onward travel arrangements.",
+        },
+      ],
+
+      inclusions: [
+        "Accommodation as confirmed",
+        "Intercity transfers only if specified",
+        "Sightseeing listed in the final itinerary",
+        "Safari arrangements only if explicitly included",
+      ],
+
+      exclusions: [
+        "Flights and train tickets unless included",
+        "Safari permits and vehicle charges unless specified",
+        "Monument entry tickets and guide fees unless included",
+        "Personal expenses and unlisted meals",
+      ],
+    },
+  ],
+
+  honeymoonText:
+    "Bandhavgarh is an adventurous alternative for couples who enjoy wildlife, nature and peaceful forest stays. A safari holiday can be combined with Khajuraho for a distinctive wildlife-and-heritage getaway.",
+
+  familyText:
+    "Bandhavgarh can be a memorable wildlife destination for families. Safari age requirements, vehicle arrangements and activity suitability should be checked before booking, especially when travelling with young children.",
+
+  groupText:
+    "Bandhavgarh is suitable for wildlife groups, photography trips and nature-focused holidays. Multiple safari vehicles and accommodation can be arranged subject to permits, park regulations and availability.",
+
+  faqs: [
+    {
+      question: "How many safaris are included?",
+      answer:
+        "The number of safari drives depends on the selected package and confirmed booking. Check whether permits, vehicle charges and guide fees are included before making a reservation.",
+    },
+    {
+      question: "Is a tiger sighting guaranteed?",
+      answer:
+        "No. Bandhavgarh is known for its tiger habitat, but sightings are never guaranteed. Wildlife movement, weather and safari conditions influence what visitors may see.",
+    },
+    {
+      question: "When is Bandhavgarh National Park closed?",
+      answer:
+        "The core safari zones generally close during the monsoon season, but schedules can vary by year and zone. Confirm current operating dates before booking.",
+    },
+    {
+      question: "What is the best time to visit Bandhavgarh?",
+      answer:
+        "February to June is generally considered a favourable period for wildlife viewing. The best dates for your trip depend on seasonal conditions, park schedules and safari availability.",
+    },
+    {
+      question: "How do I book a customised itinerary?",
+      answer:
+        "Share your travel dates, starting city, group size and preferred number of safaris with LV SKY HIGH. The itinerary and final pricing can then be planned according to availability and park requirements.",
+    },
+  ],
+},
+
+
+// Kaziranga 
+
+
+{
+  slug: "kaziranga-national-park",
+  name: "Kaziranga",
+  image: "/images/india-tours/kaziranga-national-park.jpg",
+
+  heroTitle: "Discover the Wild Beauty of Kaziranga",
+
+  heroDescription:
+    "Explore Kaziranga National Park in Assam, famous for its one-horned rhinoceros, lush grasslands, wetlands and exciting wildlife safari experiences.",
+
+  whyVisit:
+    "Kaziranga National Park in Assam is a UNESCO World Heritage Site known for its floodplain grasslands and wetlands along the Brahmaputra River. It is home to the Indian one-horned rhinoceros, along with tigers, elephants, wild water buffalo and diverse birdlife. Visitors can explore designated safari zones and enjoy a memorable wildlife holiday.",
+
+  bestTime:
+    "November to April is generally the main visiting season for Kaziranga. The park usually closes during the monsoon, roughly from May to October, because flooding affects the grasslands and safari areas. Opening dates and access vary by season and zone.",
+
+  idealDuration:
+    "A focused Kaziranga trip works well in 2–3 nights, allowing time for multiple safari drives across available zones. Additional nights can provide a more relaxed wildlife experience or allow you to explore other parts of Assam.",
+
+  howToReach:
+    "Jorhat Airport is one option for reaching Kaziranga, while Guwahati Airport offers broader flight connectivity. The onward journey is by road. The most suitable airport depends on your flight schedule, accommodation location and travel itinerary.",
+
+  packageCount: 3,
+
+  packages: [
+    {
+      id: "kaziranga-2-night-3-day",
+      title: "2 Night 3 Day Kaziranga Tour",
+      duration: "2 Nights 3 Days",
+      places: [
+        "Kaziranga National Park",
+        "Kaziranga Safari Zones",
+      ],
+      description:
+        "A focused Kaziranga wildlife trip with time for safari drives and a relaxing stay near the national park.",
+
+      itinerary: [
+        {
+          day: 1,
+          title: "Arrival in Kaziranga",
+          description:
+            "Arrive near Kaziranga National Park, check in to your accommodation and relax. Confirm your safari schedule for the following day.",
+        },
+        {
+          day: 2,
+          title: "Kaziranga Wildlife Safari",
+          description:
+            "Enjoy a pre-booked jeep safari in an available zone. Explore the grasslands and wetlands while looking for rhinos, elephants and birdlife.",
+        },
+        {
+          day: 3,
+          title: "Final Safari and Departure",
+          description:
+            "Enjoy an additional safari if booked and available, followed by breakfast and departure.",
+        },
+      ],
+
+      inclusions: [
+        "Accommodation for 2 nights as confirmed",
+        "Meals according to the selected plan",
+        "Safari arrangements only as specified in the booking",
+        "Transfers only if included in the package",
+      ],
+
+      exclusions: [
+        "Flights and train tickets unless included",
+        "Safari permits and vehicle charges unless specified",
+        "Guide fees unless included",
+        "Personal expenses and unlisted meals",
+      ],
+    },
+
+    {
+      id: "kaziranga-3-night-4-day",
+      title: "3 Night 4 Day Kaziranga Tour",
+      duration: "3 Nights 4 Days",
+      places: [
+        "Kaziranga National Park",
+        "Multiple Safari Zones",
+        "Local Nature Areas",
+      ],
+      description:
+        "A longer wildlife holiday with additional opportunities to explore different safari zones, subject to permits and availability.",
+
+      itinerary: [
+        {
+          day: 1,
+          title: "Arrival and Check-in",
+          description:
+            "Reach Kaziranga, check in to your accommodation and review your planned safari schedule.",
+        },
+        {
+          day: 2,
+          title: "Morning Wildlife Safari",
+          description:
+            "Take a scheduled safari through an available zone and explore Kaziranga's grassland habitat.",
+        },
+        {
+          day: 3,
+          title: "Additional Safari Experience",
+          description:
+            "Enjoy another pre-booked safari, potentially in a different zone, depending on permits and operating schedules.",
+        },
+        {
+          day: 4,
+          title: "Breakfast and Departure",
+          description:
+            "Have breakfast, check out and continue your onward journey.",
+        },
+      ],
+
+      inclusions: [
+        "Accommodation for 3 nights as confirmed",
+        "Meals according to the selected plan",
+        "Safari drives only as specified in the booking",
+        "Transfers only if included in the package",
+      ],
+
+      exclusions: [
+        "Flights and train tickets unless included",
+        "Safari permits and vehicle charges unless specified",
+        "Camera or other applicable fees",
+        "Personal expenses and unlisted meals",
+      ],
+    },
+
+    {
+      id: "kaziranga-4-night-5-day",
+      title: "4 Night 5 Day Kaziranga Tour",
+      duration: "4 Nights 5 Days",
+      places: [
+        "Kaziranga National Park",
+        "Designated Safari Zones",
+        "Assam Nature Experiences",
+      ],
+      description:
+        "An extended Kaziranga holiday offering a relaxed pace, more time for wildlife safaris and optional local experiences.",
+
+      itinerary: [
+        {
+          day: 1,
+          title: "Arrival in Kaziranga",
+          description:
+            "Arrive at your accommodation near the national park and enjoy a relaxed evening.",
+        },
+        {
+          day: 2,
+          title: "First Wildlife Safari",
+          description:
+            "Enjoy a scheduled safari in an available zone and discover Kaziranga's wildlife habitat.",
+        },
+        {
+          day: 3,
+          title: "Explore Another Safari Zone",
+          description:
+            "Take an additional safari if available and spend time observing the region's wildlife and birdlife.",
+        },
+        {
+          day: 4,
+          title: "Nature and Local Experiences",
+          description:
+            "Enjoy an optional local nature or cultural experience, or schedule another safari subject to availability.",
+        },
+        {
+          day: 5,
+          title: "Departure",
+          description:
+            "Have breakfast, check out and depart for your next destination.",
+        },
+      ],
+
+      inclusions: [
+        "Accommodation for 4 nights as confirmed",
+        "Meals according to the selected plan",
+        "Safari arrangements only as specified in the booking",
+        "Local experiences and transfers only if included",
+      ],
+
+      exclusions: [
+        "Flights and train tickets unless included",
+        "Safari permits and vehicle charges unless specified",
+        "Optional activities and guide fees unless included",
+        "Personal expenses and unlisted meals",
+      ],
+    },
+  ],
+
+  honeymoonText:
+    "Kaziranga offers a distinctive nature-focused getaway for couples who enjoy wildlife, peaceful surroundings and outdoor experiences. Couples can combine their stay with Assam's tea gardens or other regional attractions.",
+
+  familyText:
+    "Kaziranga can be an exciting wildlife destination for families. Safari suitability, age restrictions and available activities should be checked before booking, particularly when travelling with young children.",
+
+  groupText:
+    "Kaziranga is suitable for wildlife enthusiasts, photography groups and nature tours. Group safari arrangements depend on vehicle availability, park regulations and confirmed permits.",
+
+  faqs: [
+    {
+      question: "Is a rhino sighting likely?",
+      answer:
+        "Kaziranga has a well-known population of Indian one-horned rhinoceroses, but no wildlife safari can guarantee a sighting. Animal movement and safari conditions affect what visitors may see.",
+    },
+    {
+      question: "Is an elephant-back safari included?",
+      answer:
+        "Not automatically. Safari options depend on current park operations, regulations and availability. Confirm which activities are offered and included in your specific package.",
+    },
+    {
+      question: "When is Kaziranga National Park closed?",
+      answer:
+        "The park generally closes during the monsoon season, often from May to October. Exact opening and closing dates can vary by year and safari zone.",
+    },
+    {
+      question: "How many days are enough for Kaziranga?",
+      answer:
+        "Two to three nights is a useful starting point for a focused wildlife trip with multiple safari opportunities, depending on availability.",
+    },
+    {
+      question: "How do I book a customised itinerary?",
+      answer:
+        "Share your travel dates, starting city, group size and preferred number of safari drives with LV SKY HIGH. Your itinerary and pricing can then be planned according to availability.",
+    },
+  ],
+},
+
+// Tadoba 
+
+
+{
+  slug: "tadoba-national-park",
+  name: "Tadoba",
+  image: "/images/india-tours/tadoba-national-park.jpg",
+
+  heroTitle: "Explore the Wild Beauty of Tadoba",
+
+  heroDescription:
+    "Discover Tadoba-Andhari Tiger Reserve in Maharashtra, known for its Bengal tigers, dense forests, bamboo groves and exciting wildlife safari experiences.",
+
+  whyVisit:
+    "Tadoba-Andhari Tiger Reserve is one of Maharashtra's best-known tiger reserves, featuring teak forests, bamboo groves, grasslands and Tadoba Lake. Visitors may spot Bengal tigers, leopards, sloth bears, deer and a variety of birds. Wildlife sightings are never guaranteed, but guided safaris offer an opportunity to explore this remarkable natural habitat.",
+
+  bestTime:
+    "February to June is generally a popular period for wildlife sightings as animals gather near remaining water sources. The park typically closes during the monsoon, around July to mid-October, although exact dates and zone operations vary by year.",
+
+  idealDuration:
+    "A focused Tadoba wildlife trip works well in 2–3 nights, giving travellers time for several safari drives. Adding Nagzira Wildlife Sanctuary can extend the trip by another 1–2 nights.",
+
+  howToReach:
+    "Nagpur Airport is a major gateway for Tadoba, followed by a road journey of approximately 3–4 hours, depending on the selected gate and accommodation. Confirm the nearest access point before finalising transfers.",
+
+  packageCount: 3,
+
+  packages: [
+    {
+      id: "tadoba-2-night-3-day",
+      title: "2 Night 3 Day Tadoba Tour",
+      duration: "2 Nights 3 Days",
+      places: [
+        "Tadoba-Andhari Tiger Reserve",
+        "Tadoba Safari Zones",
+      ],
+      description:
+        "A short wildlife getaway with time for scheduled jeep safaris and a relaxing stay near Tadoba.",
+
+      itinerary: [
+        {
+          day: 1,
+          title: "Arrival in Tadoba",
+          description:
+            "Arrive near the selected Tadoba gate, check in to your accommodation and prepare for your planned safari.",
+        },
+        {
+          day: 2,
+          title: "Tadoba Wildlife Safari",
+          description:
+            "Enjoy a pre-booked jeep safari in an available zone and explore the forest in search of tigers and other wildlife.",
+        },
+        {
+          day: 3,
+          title: "Morning Safari and Departure",
+          description:
+            "Take an additional safari if booked and available, then check out and depart for your onward journey.",
+        },
+      ],
+
+      inclusions: [
+        "Accommodation for 2 nights as confirmed",
+        "Meals according to the selected plan",
+        "Safari drives only as specified in the booking",
+        "Transfers only if included in the package",
+      ],
+
+      exclusions: [
+        "Flights and train tickets unless included",
+        "Safari permits and vehicle charges unless specified",
+        "Guide and applicable camera fees unless included",
+        "Personal expenses and unlisted meals",
+      ],
+    },
+
+    {
+      id: "tadoba-3-night-4-day",
+      title: "3 Night 4 Day Tadoba Tour",
+      duration: "3 Nights 4 Days",
+      places: [
+        "Tadoba-Andhari Tiger Reserve",
+        "Multiple Safari Zones",
+        "Tadoba Lake Area",
+      ],
+      description:
+        "A longer wildlife itinerary with more opportunities for safari drives and forest exploration.",
+
+      itinerary: [
+        {
+          day: 1,
+          title: "Arrival and Check-in",
+          description:
+            "Reach Tadoba, settle into your accommodation and confirm the next day's safari arrangements.",
+        },
+        {
+          day: 2,
+          title: "First Wildlife Safari",
+          description:
+            "Enjoy a scheduled jeep safari and discover Tadoba's forest landscapes and wildlife.",
+        },
+        {
+          day: 3,
+          title: "Additional Safari Experience",
+          description:
+            "Take another pre-booked safari, potentially in a different zone depending on permit availability.",
+        },
+        {
+          day: 4,
+          title: "Breakfast and Departure",
+          description:
+            "Enjoy breakfast, check out and continue your onward journey.",
+        },
+      ],
+
+      inclusions: [
+        "Accommodation for 3 nights as confirmed",
+        "Meals according to the selected plan",
+        "Safari arrangements as specified in the booking",
+        "Transfers only if included in the package",
+      ],
+
+      exclusions: [
+        "Flights and train tickets unless included",
+        "Safari permits and vehicle charges unless specified",
+        "Optional activities and guide fees unless included",
+        "Personal expenses and unlisted meals",
+      ],
+    },
+
+    {
+      id: "tadoba-nagzira-tour",
+      title: "Tadoba with Nagzira Park",
+      duration: "4 Nights 5 Days",
+      places: [
+        "Tadoba-Andhari Tiger Reserve",
+        "Nagzira Wildlife Sanctuary",
+      ],
+      description:
+        "Combine Tadoba's tiger-safari experience with Nagzira's quieter forest landscapes for a wider wildlife holiday.",
+
+      itinerary: [
+        {
+          day: 1,
+          title: "Arrival in Tadoba",
+          description:
+            "Arrive near Tadoba, check in to your accommodation and prepare for the wildlife experience.",
+        },
+        {
+          day: 2,
+          title: "Tadoba Safari",
+          description:
+            "Explore an available Tadoba safari zone with a pre-booked jeep safari.",
+        },
+        {
+          day: 3,
+          title: "Additional Tadoba Experience",
+          description:
+            "Enjoy another scheduled safari before travelling onward according to the confirmed itinerary.",
+        },
+        {
+          day: 4,
+          title: "Explore Nagzira",
+          description:
+            "Visit the Nagzira region and enjoy a safari if available and included in your booking.",
+        },
+        {
+          day: 5,
+          title: "Departure",
+          description:
+            "Check out and depart for your onward destination.",
+        },
+      ],
+
+      inclusions: [
+        "Accommodation for 4 nights as confirmed",
+        "Meals according to the selected plan",
+        "Safari arrangements only as specified",
+        "Inter-destination transfers only if included",
+      ],
+
+      exclusions: [
+        "Flights and train tickets unless included",
+        "Safari permits and vehicle charges unless specified",
+        "Optional activities and guide fees unless included",
+        "Personal expenses and unlisted meals",
+      ],
+    },
+  ],
+
+  honeymoonText:
+    "Tadoba is an unconventional getaway for couples who enjoy nature, wildlife and peaceful forest surroundings. A wildlife-focused itinerary can be customised with comfortable stays and pre-booked safari experiences.",
+
+  familyText:
+    "Tadoba can be a memorable wildlife destination for families. Check safari timings, age-related rules, vehicle arrangements and travel distances before booking, especially when travelling with young children.",
+
+  groupText:
+    "Tadoba is suitable for wildlife enthusiasts, photography groups and nature tours. Group safari bookings depend on vehicle availability, permits and current park regulations.",
+
+  faqs: [
+    {
+      question: "How many safaris are included?",
+      answer:
+        "The number of safari drives depends on your selected package. Confirm the safari count, zones, permits and vehicle charges before booking.",
+    },
+    {
+      question: "Is a tiger sighting guaranteed?",
+      answer:
+        "No. Tadoba is known for tiger sightings, but wildlife movement is unpredictable and no safari can guarantee seeing a tiger.",
+    },
+    {
+      question: "What is the difference between Tadoba and Nagzira?",
+      answer:
+        "Tadoba is a well-known tiger reserve in Maharashtra, while Nagzira is another forest wildlife destination. Combining them offers a broader wildlife itinerary, subject to travel time and safari availability.",
+    },
+    {
+      question: "When is Tadoba closed?",
+      answer:
+        "Tadoba's core safari areas generally have a monsoon closure, but exact dates and access rules can vary by year and zone. Check the current official schedule before travelling.",
+    },
+    {
+      question: "How do I book a customised Tadoba trip?",
+      answer:
+        "Share your travel dates, starting city, group size and preferred number of safaris with LV SKY HIGH to plan an itinerary according to availability.",
+    },
+  ],
+},
+
+// Kanha 
+
+
+{
+  slug: "kanha-national-park",
+  name: "Kanha",
+  image: "/images/india-tours/kanha-national-park.jpg",
+
+  heroTitle: "Explore the Wild Beauty of Kanha",
+
+  heroDescription:
+    "Discover Kanha National Park in Madhya Pradesh, famous for its sal forests, open meadows, Bengal tigers and rich wildlife safari experiences.",
+
+  whyVisit:
+    "Kanha National Park is one of India's major tiger reserves, known for its sal and bamboo forests, open meadows and diverse wildlife. The park is associated with the conservation of the hard-ground barasingha and is home to tigers, leopards, wild dogs and many bird species. Visitors can explore designated safari zones and experience the natural beauty of central India.",
+
+  bestTime:
+    "February to June is generally a popular period for wildlife sightings as animals gather near water sources. The park usually closes during the monsoon, around July to mid-October, although exact dates and zone availability vary by year.",
+
+  idealDuration:
+    "A focused Kanha safari trip works well in 2–3 nights, providing time for multiple safari drives across available zones. A longer stay allows for a more relaxed wildlife experience.",
+
+  howToReach:
+    "Jabalpur Airport is a commonly used gateway, followed by a road journey of approximately 4–5 hours, depending on the resort and park gate. Nagpur Airport is another option, with a longer road transfer. Choose the gateway according to your travel schedule and accommodation location.",
+
+  packageCount: 3,
+
+  packages: [
+    {
+      id: "kanha-2-night-3-day",
+      title: "2 Night 3 Day Kanha Tour",
+      duration: "2 Nights 3 Days",
+      places: [
+        "Kanha National Park",
+        "Kanha Safari Zones",
+      ],
+      description:
+        "A short wildlife getaway with scheduled safari opportunities and a relaxing stay near the national park.",
+
+      itinerary: [
+        {
+          day: 1,
+          title: "Arrival in Kanha",
+          description:
+            "Arrive near your selected park gate, check in to your accommodation and prepare for the planned safari.",
+        },
+        {
+          day: 2,
+          title: "Kanha Wildlife Safari",
+          description:
+            "Enjoy a pre-booked jeep safari in an available zone and explore the forests and meadows in search of wildlife.",
+        },
+        {
+          day: 3,
+          title: "Morning Safari and Departure",
+          description:
+            "Enjoy an additional safari if booked and available, then check out and depart for your onward journey.",
+        },
+      ],
+
+      inclusions: [
+        "Accommodation for 2 nights as confirmed",
+        "Meals according to the selected plan",
+        "Safari drives as specified in the booking",
+        "Transfers only if included in the package",
+      ],
+
+      exclusions: [
+        "Flights and train tickets unless included",
+        "Safari permits and vehicle charges unless specified",
+        "Guide fees unless included",
+        "Personal expenses and unlisted meals",
+      ],
+    },
+
+    {
+      id: "kanha-3-night-4-day",
+      title: "3 Night 4 Day Kanha Tour",
+      duration: "3 Nights 4 Days",
+      places: [
+        "Kanha National Park",
+        "Multiple Safari Zones",
+        "Kanha Forest Landscapes",
+      ],
+      description:
+        "A longer wildlife holiday with more opportunities to explore available safari zones and observe Kanha's diverse wildlife.",
+
+      itinerary: [
+        {
+          day: 1,
+          title: "Arrival and Check-in",
+          description:
+            "Reach Kanha, settle into your accommodation and confirm your safari schedule.",
+        },
+        {
+          day: 2,
+          title: "First Wildlife Safari",
+          description:
+            "Take a scheduled jeep safari and discover Kanha's forests, meadows and wildlife habitats.",
+        },
+        {
+          day: 3,
+          title: "Additional Safari Experience",
+          description:
+            "Enjoy another pre-booked safari, potentially in a different zone depending on permit availability.",
+        },
+        {
+          day: 4,
+          title: "Breakfast and Departure",
+          description:
+            "Have breakfast, check out and continue your onward journey.",
+        },
+      ],
+
+      inclusions: [
+        "Accommodation for 3 nights as confirmed",
+        "Meals according to the selected plan",
+        "Safari arrangements as specified in the booking",
+        "Transfers only if included in the package",
+      ],
+
+      exclusions: [
+        "Flights and train tickets unless included",
+        "Safari permits and vehicle charges unless specified",
+        "Optional activities and guide fees unless included",
+        "Personal expenses and unlisted meals",
+      ],
+    },
+
+    {
+      id: "kanha-4-night-5-day",
+      title: "4 Night 5 Day Kanha Tour",
+      duration: "4 Nights 5 Days",
+      places: [
+        "Kanha National Park",
+        "Designated Safari Zones",
+        "Local Nature Experiences",
+      ],
+      description:
+        "An extended Kanha itinerary offering a relaxed pace and additional opportunities for wildlife safaris and nature experiences.",
+
+      itinerary: [
+        {
+          day: 1,
+          title: "Arrival in Kanha",
+          description:
+            "Arrive near the national park, check in to your accommodation and enjoy a relaxed evening.",
+        },
+        {
+          day: 2,
+          title: "Kanha Wildlife Safari",
+          description:
+            "Enjoy a pre-booked safari and explore the park's forest and meadow habitats.",
+        },
+        {
+          day: 3,
+          title: "Explore Another Safari Zone",
+          description:
+            "Take an additional safari if available, following your confirmed permit and vehicle arrangements.",
+        },
+        {
+          day: 4,
+          title: "Nature and Leisure Day",
+          description:
+            "Enjoy leisure time or an optional local nature experience, subject to availability and park regulations.",
+        },
+        {
+          day: 5,
+          title: "Departure",
+          description:
+            "Check out after breakfast and depart for your next destination.",
+        },
+      ],
+
+      inclusions: [
+        "Accommodation for 4 nights as confirmed",
+        "Meals according to the selected plan",
+        "Safari arrangements only as specified",
+        "Transfers and optional activities only if included",
+      ],
+
+      exclusions: [
+        "Flights and train tickets unless included",
+        "Safari permits and vehicle charges unless specified",
+        "Optional activities and guide fees unless included",
+        "Personal expenses and unlisted meals",
+      ],
+    },
+  ],
+
+  honeymoonText:
+    "Kanha offers a distinctive nature-focused getaway for couples who enjoy forest surroundings, wildlife and peaceful resort stays. A customised itinerary can combine comfortable accommodation with pre-booked safari experiences.",
+
+  familyText:
+    "Kanha can be an exciting wildlife destination for families. Check safari rules, age restrictions, vehicle arrangements and travel times before booking, especially when travelling with young children.",
+
+  groupText:
+    "Kanha is suitable for wildlife enthusiasts, photography groups and nature tours. Group safari arrangements depend on permits, vehicle availability and current park regulations.",
+
+  faqs: [
+    {
+      question: "How many safaris are included?",
+      answer:
+        "The number of safari drives depends on the selected itinerary. Confirm the safari count, zones, permits and vehicle charges before booking.",
+    },
+    {
+      question: "Is a tiger sighting guaranteed?",
+      answer:
+        "No. Kanha is known for its tiger population, but wildlife sightings are unpredictable and no safari can guarantee seeing a tiger.",
+    },
+    {
+      question: "When is Kanha National Park closed?",
+      answer:
+        "The park generally has a monsoon closure, often from July to mid-October. Exact opening dates and access rules can vary by year and safari zone.",
+    },
+    {
+      question: "How many days are enough for Kanha?",
+      answer:
+        "Two to three nights is a useful starting point for a focused wildlife trip with multiple safari opportunities, depending on availability.",
+    },
+    {
+      question: "How do I book a customised Kanha trip?",
+      answer:
+        "Share your travel dates, starting city, group size and preferred number of safari drives with LV SKY HIGH to plan an itinerary according to availability.",
+    },
+  ],
+},
+
+// Mount Abu
+
+
+{
+  slug: "mount-abu",
+  name: "Mount Abu",
+  image: "/images/india-tours/mount-abu.jpg",
+
+  heroTitle: "Discover the Beauty of Mount Abu",
+
+  heroDescription:
+    "Explore Rajasthan's only hill station, known for Nakki Lake, the Dilwara Jain Temples, Guru Shikhar and beautiful Aravalli mountain views.",
+
+  whyVisit:
+    "Mount Abu is Rajasthan's only hill station, situated in the Aravalli Range. It is known for Nakki Lake, boating, the intricately carved Dilwara Jain Temples, Guru Shikhar and scenic sunset viewpoints. Its cooler climate and peaceful surroundings make it a popular weekend getaway for couples, families and nature lovers.",
+
+  bestTime:
+    "October to March is generally the most comfortable period for sightseeing. April to June is warmer but Mount Abu remains a popular summer escape compared with Rajasthan's plains. July to September brings monsoon greenery and occasional travel disruptions.",
+
+  idealDuration:
+    "A 2-night trip is generally enough to explore Nakki Lake, the Dilwara Jain Temples, Guru Shikhar and a sunset viewpoint. Travellers can extend the trip by combining Mount Abu with Udaipur or other Rajasthan destinations.",
+
+  howToReach:
+    "Maharana Pratap Airport in Udaipur is a commonly used air gateway, followed by a road journey of approximately 3 hours depending on traffic. Abu Road railway station is around 45 minutes to an hour from Mount Abu by road and connects the hill station with major cities.",
+
+  packageCount: 3,
+
+  packages: [
+    {
+      id: "mount-abu-weekend",
+      title: "Weekend Gateway to Mount Abu",
+      duration: "2 Nights 3 Days",
+      places: [
+        "Nakki Lake",
+        "Dilwara Jain Temples",
+        "Sunset Point",
+      ],
+      description:
+        "A short Mount Abu getaway covering popular sightseeing spots, peaceful lake views and scenic sunset experiences.",
+
+      itinerary: [
+        {
+          day: 1,
+          title: "Arrival and Local Sightseeing",
+          description:
+            "Arrive in Mount Abu, check in to your hotel and explore Nakki Lake and the nearby market, depending on arrival time.",
+        },
+        {
+          day: 2,
+          title: "Temples and Mountain Views",
+          description:
+            "Visit the Dilwara Jain Temples, Guru Shikhar and a scenic sunset viewpoint, subject to local timings and access.",
+        },
+        {
+          day: 3,
+          title: "Leisure and Departure",
+          description:
+            "Enjoy breakfast, explore any nearby attraction if time permits, and depart for your onward journey.",
+        },
+      ],
+
+      inclusions: [
+        "Accommodation for 2 nights as confirmed",
+        "Meals according to the selected plan",
+        "Sightseeing only as specified in the booking",
+        "Transfers only if included in the package",
+      ],
+
+      exclusions: [
+        "Flights and train tickets unless included",
+        "Entry tickets and boating charges unless specified",
+        "Personal expenses and unlisted meals",
+        "Additional transport and activities not mentioned",
+      ],
+    },
+
+    {
+      id: "mount-abu-aravali",
+      title: "Explore the Hills of Aravali",
+      duration: "3 Nights 4 Days",
+      places: [
+        "Mount Abu",
+        "Guru Shikhar",
+        "Nakki Lake",
+        "Dilwara Jain Temples",
+      ],
+      description:
+        "A relaxed hill-station itinerary combining Mount Abu's famous attractions, Aravalli landscapes and leisure time.",
+
+      itinerary: [
+        {
+          day: 1,
+          title: "Arrival in Mount Abu",
+          description:
+            "Arrive at Mount Abu, check in to your accommodation and spend the evening at leisure near Nakki Lake.",
+        },
+        {
+          day: 2,
+          title: "Mount Abu Sightseeing",
+          description:
+            "Explore the Dilwara Jain Temples and other local attractions, following opening hours and visitor guidelines.",
+        },
+        {
+          day: 3,
+          title: "Guru Shikhar and Scenic Views",
+          description:
+            "Visit Guru Shikhar and selected viewpoints around the Aravalli hills, subject to weather and road conditions.",
+        },
+        {
+          day: 4,
+          title: "Breakfast and Departure",
+          description:
+            "Enjoy breakfast, check out and leave for your onward destination.",
+        },
+      ],
+
+      inclusions: [
+        "Accommodation for 3 nights as confirmed",
+        "Meals according to the selected plan",
+        "Sightseeing as listed in the final itinerary",
+        "Transfers only if included in the package",
+      ],
+
+      exclusions: [
+        "Flights and train tickets unless included",
+        "Entry tickets, boating and activity charges unless specified",
+        "Personal expenses and unlisted meals",
+        "Optional excursions not mentioned in the booking",
+      ],
+    },
+
+    {
+      id: "mount-abu-adventure",
+      title: "Adventure of Aravali Hills",
+      duration: "3 Nights 4 Days",
+      places: [
+        "Guru Shikhar",
+        "Nakki Lake",
+        "Sunset Point",
+        "Aravalli Hills",
+      ],
+      description:
+        "An activity-focused Mount Abu holiday with scenic walks, mountain viewpoints, lake experiences and time to explore the surrounding hills.",
+
+      itinerary: [
+        {
+          day: 1,
+          title: "Arrival and Leisure",
+          description:
+            "Arrive in Mount Abu, check in to your hotel and enjoy a relaxed evening around the town.",
+        },
+        {
+          day: 2,
+          title: "Lake and Nature Experiences",
+          description:
+            "Explore Nakki Lake and nearby viewpoints, with optional boating or other activities subject to availability.",
+        },
+        {
+          day: 3,
+          title: "Aravalli Hill Excursion",
+          description:
+            "Visit Guru Shikhar and selected scenic spots. Choose suitable walking routes based on weather and fitness.",
+        },
+        {
+          day: 4,
+          title: "Departure",
+          description:
+            "Have breakfast, check out and depart for your onward journey.",
+        },
+      ],
+
+      inclusions: [
+        "Accommodation for 3 nights as confirmed",
+        "Meals according to the selected plan",
+        "Listed sightseeing arrangements",
+        "Adventure activities only if explicitly included",
+      ],
+
+      exclusions: [
+        "Flights and train tickets unless included",
+        "Boating and optional activity charges unless specified",
+        "Personal expenses and unlisted meals",
+        "Equipment, guides or transfers not listed in the package",
+      ],
+    },
+  ],
+
+  honeymoonText:
+    "Mount Abu is a popular short honeymoon destination, offering romantic lake views, sunset points, pleasant weather and peaceful hill-station stays. Couples can also customise their itinerary with comfortable accommodation and private sightseeing.",
+
+  familyText:
+    "Mount Abu is suitable for a family holiday with lake boating, temple visits, scenic viewpoints and relaxed sightseeing. Families travelling with children or senior citizens can customise the pace and transport arrangements.",
+
+  groupText:
+    "Mount Abu works well for group holidays, college trips and weekend excursions. Group transport, hotel arrangements and sightseeing can be customised according to group size and travel dates.",
+
+  faqs: [
+    {
+      question: "Is Mount Abu cooler than the rest of Rajasthan?",
+      answer:
+        "Yes. Its hill-station elevation generally makes Mount Abu cooler than the surrounding plains, particularly during the summer months.",
+    },
+    {
+      question: "Are the Dilwara Jain Temples included?",
+      answer:
+        "The temples can be included in the sightseeing itinerary, but entry rules, visitor timings and any applicable restrictions should be confirmed before your visit.",
+    },
+    {
+      question: "Can Mount Abu be combined with Udaipur?",
+      answer:
+        "Yes. Mount Abu can be combined with Udaipur for a longer Rajasthan holiday, depending on your available travel days.",
+    },
+    {
+      question: "How many days are enough for Mount Abu?",
+      answer:
+        "Two nights and three days are a good starting point for the main attractions. A longer stay allows for a more relaxed trip.",
+    },
+    {
+      question: "How do I book a customised Mount Abu trip?",
+      answer:
+        "Share your travel dates, starting city, group size and preferred hotel category with LV SKY HIGH to plan a suitable itinerary.",
+    },
+  ],
+},
+
+
+// Jaisalmer 
+
+
+{
+  slug: "jaisalmer",
+  name: "Jaisalmer",
+  image: "/images/india-tours/jaisalmer.jpg",
+
+  heroTitle: "Discover the Golden City of Jaisalmer",
+
+  heroDescription:
+    "Explore the Golden Fort, historic havelis and the golden sand dunes of the Thar Desert with an unforgettable Jaisalmer holiday.",
+
+  whyVisit:
+    "Jaisalmer, known as the Golden City of Rajasthan, is famous for Jaisalmer Fort, intricately carved havelis and the Sam Sand Dunes. Visitors can explore historic streets, experience desert landscapes and enjoy camel safaris and desert-camp stays. Jaisalmer can also be combined with Udaipur for a wider Rajasthan holiday.",
+
+  bestTime:
+    "October to March is generally the most comfortable period to visit Jaisalmer for sightseeing and desert excursions. April to June can be extremely hot, while monsoon weather may affect outdoor activities and travel plans.",
+
+  idealDuration:
+    "A 2-night, 3-day trip is a good starting point for exploring Jaisalmer Fort, local havelis and the Sam Sand Dunes. A 4–5 night itinerary allows travellers to combine Jaisalmer with Udaipur or other Rajasthan destinations.",
+
+  howToReach:
+    "Jaisalmer has an airport with limited flight connectivity, so travellers may also arrive through Jodhpur Airport and continue by road. Jaisalmer Railway Station is connected to selected major cities, including services from Jaipur and Delhi depending on the timetable.",
+
+  packageCount: 3,
+
+  packages: [
+    {
+      id: "jaisalmer-desert-weekend",
+      title: "Weekend Gateway to the Desert of Rajasthan",
+      duration: "2 Nights 3 Days",
+      places: [
+        "Jaisalmer Fort",
+        "Patwon Ki Haveli",
+        "Sam Sand Dunes",
+        "Gadisar Lake",
+      ],
+      description:
+        "A short desert getaway covering Jaisalmer's heritage attractions, golden architecture and an optional desert-camp experience.",
+
+      itinerary: [
+        {
+          day: 1,
+          title: "Arrival and Golden City Sightseeing",
+          description:
+            "Arrive in Jaisalmer, check in to your hotel and explore Jaisalmer Fort, local streets and Gadisar Lake, depending on arrival time.",
+        },
+        {
+          day: 2,
+          title: "Havelis and Desert Experience",
+          description:
+            "Visit Patwon Ki Haveli and other local attractions. Continue to Sam Sand Dunes for an optional camel safari and desert-camp experience, subject to availability.",
+        },
+        {
+          day: 3,
+          title: "Breakfast and Departure",
+          description:
+            "Enjoy breakfast, explore nearby attractions if time permits, and depart for your onward journey.",
+        },
+      ],
+
+      inclusions: [
+        "Accommodation for 2 nights as confirmed",
+        "Meals according to the selected plan",
+        "Sightseeing listed in the final itinerary",
+        "Desert camp or safari only if specified in the booking",
+      ],
+
+      exclusions: [
+        "Flights and train tickets unless included",
+        "Camel safari and cultural activities unless specified",
+        "Entry tickets and personal expenses",
+        "Transfers and meals not mentioned in the package",
+      ],
+    },
+
+    {
+      id: "jaisalmer-rajasthan-colours",
+      title: "Enjoy the Colours of Rajasthan",
+      duration: "4 Nights 5 Days",
+      places: [
+        "Jaisalmer",
+        "Jaisalmer Fort",
+        "Sam Sand Dunes",
+        "Udaipur",
+      ],
+      description:
+        "A broader Rajasthan itinerary featuring Jaisalmer's desert heritage and an extension to Udaipur, subject to the selected route.",
+
+      itinerary: [
+        {
+          day: 1,
+          title: "Arrival in Jaisalmer",
+          description:
+            "Arrive in Jaisalmer, check in to your hotel and enjoy an evening exploring the local market.",
+        },
+        {
+          day: 2,
+          title: "Golden Fort and Havelis",
+          description:
+            "Explore Jaisalmer Fort, Patwon Ki Haveli and other heritage attractions around the city.",
+        },
+        {
+          day: 3,
+          title: "Sam Sand Dunes",
+          description:
+            "Visit the desert dunes and enjoy optional camel safari or cultural performances. Overnight arrangements depend on the selected package.",
+        },
+        {
+          day: 4,
+          title: "Continue the Rajasthan Journey",
+          description:
+            "Travel towards Udaipur or another confirmed destination. This transfer can involve a long journey, depending on the chosen route.",
+        },
+        {
+          day: 5,
+          title: "Sightseeing and Departure",
+          description:
+            "Explore the selected destination if time permits, then depart according to your travel schedule.",
+        },
+      ],
+
+      inclusions: [
+        "Accommodation as confirmed in the itinerary",
+        "Meals according to the selected plan",
+        "Sightseeing listed in the final itinerary",
+        "Intercity transfers only if included in the booking",
+      ],
+
+      exclusions: [
+        "Flights and train tickets unless included",
+        "Entry tickets and optional activities",
+        "Personal expenses and unlisted meals",
+        "Intercity transfers not included in the confirmed package",
+      ],
+    },
+
+    {
+      id: "jaisalmer-udaipur-lakes",
+      title: "Desert Magic with Udaipur's Lakes",
+      duration: "4 Nights 5 Days",
+      places: [
+        "Jaisalmer",
+        "Sam Sand Dunes",
+        "Udaipur",
+        "Lake Pichola",
+      ],
+      description:
+        "Combine Jaisalmer's golden desert landscapes and historic fort with Udaipur's lakes, palaces and scenic city views.",
+
+      itinerary: [
+        {
+          day: 1,
+          title: "Arrival in Jaisalmer",
+          description:
+            "Arrive in Jaisalmer, check in and spend the evening at leisure or explore the nearby market.",
+        },
+        {
+          day: 2,
+          title: "Explore the Golden City",
+          description:
+            "Visit Jaisalmer Fort, Patwon Ki Haveli and other selected heritage attractions.",
+        },
+        {
+          day: 3,
+          title: "Desert Dunes Experience",
+          description:
+            "Explore Sam Sand Dunes, with optional camel safari or a desert-camp stay if included in your booking.",
+        },
+        {
+          day: 4,
+          title: "Journey to Udaipur",
+          description:
+            "Transfer to Udaipur according to the confirmed itinerary. Allow sufficient travel time for this long intercity journey.",
+        },
+        {
+          day: 5,
+          title: "Udaipur Sightseeing and Departure",
+          description:
+            "Explore Lake Pichola or nearby attractions if time permits, then depart for your onward journey.",
+        },
+      ],
+
+      inclusions: [
+        "Accommodation as confirmed",
+        "Meals according to the selected plan",
+        "Listed sightseeing arrangements",
+        "Intercity transfers only if included in the package",
+      ],
+
+      exclusions: [
+        "Flights and train tickets unless included",
+        "Boat rides, safari and cultural activities unless specified",
+        "Entry tickets and personal expenses",
+        "Unlisted meals and optional excursions",
+      ],
+    },
+  ],
+
+  honeymoonText:
+    "Jaisalmer offers couples a distinctive desert honeymoon with golden architecture, heritage stays, sunset views and optional desert-camp experiences. Travellers can also combine Jaisalmer with Udaipur for a longer Rajasthan escape.",
+
+  familyText:
+    "Jaisalmer is suitable for families interested in forts, historic havelis, local culture and desert landscapes. Families should confirm safari arrangements, transport and activity suitability for children before booking.",
+
+  groupText:
+    "Jaisalmer is a good option for group holidays, college trips and cultural excursions. Hotel stays, desert camps, group transport and sightseeing can be customised according to group size and travel dates.",
+
+  faqs: [
+    {
+      question: "Is a desert-camp night included?",
+      answer:
+        "It depends on the selected package. Confirm whether a Sam Sand Dunes camp stay, meals, cultural performances and transfers are included or available as add-ons.",
+    },
+    {
+      question: "How hot does Jaisalmer get in summer?",
+      answer:
+        "Jaisalmer can become extremely hot during the summer months, especially from April to June. October to March is generally more comfortable for outdoor sightseeing.",
+    },
+    {
+      question: "Can Jaisalmer be combined with the rest of Rajasthan?",
+      answer:
+        "Yes. Jaisalmer can be combined with Udaipur, Jodhpur, Jaipur and other destinations. The best combination depends on your available days and travel route.",
+    },
+    {
+      question: "How many days are enough for Jaisalmer?",
+      answer:
+        "Two nights and three days are a good starting point for the main city attractions and a desert excursion. A longer stay allows you to explore more of Rajasthan.",
+    },
+    {
+      question: "How do I book a customised Jaisalmer trip?",
+      answer:
+        "Share your travel dates, starting city, group size and preferred hotel category with LV SKY HIGH to plan a suitable itinerary.",
+    },
+  ],
+},
+
+// Ranthambore 
+
+
+{
+  slug: "ranthambore-national-park",
+  name: "Ranthambore",
+  image: "/images/india-tours/ranthambore-national-park.jpg",
+
+  heroTitle: "Explore the Wild Beauty of Ranthambore",
+
+  heroDescription:
+    "Discover Ranthambore National Park, famous for tiger safaris, diverse wildlife and the historic Ranthambore Fort in Rajasthan.",
+
+  whyVisit:
+    "Ranthambore National Park in Rajasthan is known for its tiger population, dry forests, lakes and historic Ranthambore Fort. Visitors can explore designated safari zones in search of tigers, leopards, deer, crocodiles and a variety of birds. Ranthambore can also be combined with Jaipur for a wildlife and heritage holiday.",
+
+  bestTime:
+    "October to June is generally the park's safari season, with February to June often offering good wildlife-viewing opportunities. The park's core safari zones are generally closed during the monsoon, although exact opening dates and zone availability can vary.",
+
+  idealDuration:
+    "A 1–2 night stay is a good starting point for a short Ranthambore safari trip. A 2-night, 3-day itinerary provides more opportunities for safari drives. Combining Ranthambore with Jaipur allows additional time for Rajasthan's forts and palaces.",
+
+  howToReach:
+    "Jaipur Airport is a commonly used air gateway, followed by a road journey of around 3–4 hours depending on traffic. Sawai Madhopur railway station is the nearest major rail access point, with onward transfers available to hotels and safari areas.",
+
+  packageCount: 3,
+
+  packages: [
+    {
+      id: "ranthambore-1-night",
+      title: "1 Night 2 Day Ranthambore Tour",
+      duration: "1 Night 2 Days",
+      places: [
+        "Ranthambore National Park",
+        "Ranthambore Fort",
+        "Sawai Madhopur",
+      ],
+      description:
+        "A quick wildlife getaway with time for a scheduled safari and a short visit to local attractions, subject to availability.",
+
+      itinerary: [
+        {
+          day: 1,
+          title: "Arrival in Ranthambore",
+          description:
+            "Arrive in Sawai Madhopur, transfer to your accommodation and enjoy the evening at leisure. Safari timing depends on your arrival and confirmed booking.",
+        },
+        {
+          day: 2,
+          title: "Safari and Departure",
+          description:
+            "Take a pre-booked safari if available, enjoy breakfast and depart for your onward journey.",
+        },
+      ],
+
+      inclusions: [
+        "Accommodation for 1 night as confirmed",
+        "Meals according to the selected plan",
+        "Safari only if explicitly included in the booking",
+        "Transfers only if listed in the package",
+      ],
+
+      exclusions: [
+        "Flights and train tickets unless included",
+        "Safari permits and vehicle charges unless specified",
+        "Personal expenses and unlisted meals",
+        "Additional activities not mentioned in the itinerary",
+      ],
+    },
+
+    {
+      id: "ranthambore-2-night",
+      title: "2 Night 3 Day Ranthambore Tour",
+      duration: "2 Nights 3 Days",
+      places: [
+        "Ranthambore National Park",
+        "Ranthambore Fort",
+        "Sawai Madhopur",
+      ],
+      description:
+        "A longer wildlife getaway with more time for safari drives and exploring the Ranthambore region.",
+
+      itinerary: [
+        {
+          day: 1,
+          title: "Arrival and Relaxation",
+          description:
+            "Arrive in Sawai Madhopur, check in to your hotel and review the confirmed safari schedule.",
+        },
+        {
+          day: 2,
+          title: "Ranthambore Safari",
+          description:
+            "Enjoy a pre-booked safari in an available zone. Additional safari drives can be arranged subject to permits and availability.",
+        },
+        {
+          day: 3,
+          title: "Local Sightseeing and Departure",
+          description:
+            "Visit Ranthambore Fort or another nearby attraction if time permits, then depart for your onward journey.",
+        },
+      ],
+
+      inclusions: [
+        "Accommodation for 2 nights as confirmed",
+        "Meals according to the selected plan",
+        "Safari drives only as specified in the booking",
+        "Transfers and sightseeing only if included",
+      ],
+
+      exclusions: [
+        "Flights and train tickets unless included",
+        "Safari permits, vehicle fees and guide charges unless specified",
+        "Personal expenses and unlisted meals",
+        "Optional excursions not listed in the package",
+      ],
+    },
+
+    {
+      id: "ranthambore-jaipur",
+      title: "Ranthambore with Jaipur",
+      duration: "4 Nights 5 Days",
+      places: [
+        "Jaipur",
+        "Ranthambore National Park",
+        "Ranthambore Fort",
+        "Sawai Madhopur",
+      ],
+      description:
+        "Combine wildlife experiences at Ranthambore with Jaipur's historic forts, palaces and colourful markets.",
+
+      itinerary: [
+        {
+          day: 1,
+          title: "Arrival in Jaipur",
+          description:
+            "Arrive in Jaipur, check in to your hotel and explore nearby attractions or markets if time permits.",
+        },
+        {
+          day: 2,
+          title: "Jaipur Heritage Sightseeing",
+          description:
+            "Explore selected Jaipur attractions such as Amber Fort, Hawa Mahal and City Palace, depending on the itinerary.",
+        },
+        {
+          day: 3,
+          title: "Transfer to Ranthambore",
+          description:
+            "Travel to the Ranthambore region, check in to your accommodation and prepare for the confirmed safari schedule.",
+        },
+        {
+          day: 4,
+          title: "Wildlife Safari",
+          description:
+            "Enjoy a pre-booked safari in an available zone. Wildlife sightings depend on natural conditions and are not guaranteed.",
+        },
+        {
+          day: 5,
+          title: "Departure",
+          description:
+            "Have breakfast and depart for your onward journey according to your travel arrangements.",
+        },
+      ],
+
+      inclusions: [
+        "Accommodation as confirmed in the itinerary",
+        "Meals according to the selected plan",
+        "Jaipur sightseeing as listed",
+        "Safari and transfers only if explicitly included",
+      ],
+
+      exclusions: [
+        "Flights and train tickets unless included",
+        "Safari permits and vehicle charges unless specified",
+        "Monument entry fees unless included",
+        "Personal expenses and unlisted meals",
+      ],
+    },
+  ],
+
+  honeymoonText:
+    "Ranthambore offers couples a distinctive wildlife getaway with nature-inspired stays, scenic surroundings and optional safari experiences. It can be combined with Jaipur for a holiday that balances wildlife and Rajasthan's heritage.",
+
+  familyText:
+    "Ranthambore is suitable for families interested in wildlife, nature and outdoor experiences. Families should check age requirements, safari rules, vehicle arrangements and availability before booking.",
+
+  groupText:
+    "Ranthambore is a good option for group wildlife holidays and nature excursions. Safari vehicles, accommodation and transfers can be arranged according to group size, subject to permit availability.",
+
+  faqs: [
+    {
+      question: "How many safaris are included?",
+      answer:
+        "The number of safari drives depends on the selected package. Confirm safari permits, vehicle type, zone and scheduled drives with your travel expert before booking.",
+    },
+    {
+      question: "Is a tiger sighting guaranteed?",
+      answer:
+        "No. Ranthambore is known for its tiger population, but wildlife sightings depend on natural conditions and cannot be guaranteed.",
+    },
+    {
+      question: "Can I combine Ranthambore with Jaipur?",
+      answer:
+        "Yes. Ranthambore can be combined with Jaipur for a wildlife and heritage holiday. Allow enough time for road transfers and sightseeing.",
+    },
+    {
+      question: "When is Ranthambore National Park closed?",
+      answer:
+        "Safari availability varies by season and zone. Core zones are generally closed during the monsoon, so confirm current dates and zone availability before booking.",
+    },
+    {
+      question: "How do I book a customised Ranthambore trip?",
+      answer:
+        "Share your travel dates, starting city, group size and preferred accommodation with LV SKY HIGH to plan a suitable itinerary.",
+    },
+  ],
+},
+
+
+
 
 
 

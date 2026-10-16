@@ -1,222 +1,4 @@
 
-// "use client";
-
-// import { useState, type FormEvent } from "react";
-// import { useRouter } from "next/navigation";
-// import { CalendarDays, ChevronDown, MapPin, Search } from "lucide-react";
-
-// const destinations = [
-//   { label: "Goa", route: "/india-tours/goa" },
-//   { label: "Kerala", route: "/india-tours/kerala" },
-//   { label: "Kashmir", route: "/india-tours/kashmir" },
-//   { label: "Himachal Pradesh", route: "/india-tours/himachal-pradesh" },
-//   { label: "Rajasthan", route: "/india-tours/rajasthan" },
-//   { label: "Uttarakhand", route: "/india-tours/uttarakhand" },
-//   { label: "Andaman Islands", route: "/india-tours/andaman-islands" },
-//   { label: "Leh-Ladakh", route: "/india-tours/leh-ladakh" },
-//   { label: "Dubai", route: "/International/dubai" },
-//   { label: "Thailand", route: "/International/thailand" },
-//   { label: "Russia", route: "/International/russia" },
-// ];
-
-// function getLocalDate() {
-//   const date = new Date();
-//   const year = date.getFullYear();
-//   const month = String(date.getMonth() + 1).padStart(2, "0");
-//   const day = String(date.getDate()).padStart(2, "0");
-
-//   return `${year}-${month}-${day}`;
-// }
-
-// export default function SearchBox() {
-//   const router = useRouter();
-
-//   const [destination, setDestination] = useState("");
-//   const [checkIn, setCheckIn] = useState("");
-//   const [checkOut, setCheckOut] = useState("");
-//   const [guests, setGuests] = useState("2");
-//   const [error, setError] = useState("");
-
-//   const today = getLocalDate();
-
-//   function handleSubmit(event: FormEvent<HTMLFormElement>) {
-//     event.preventDefault();
-//     setError("");
-
-//     const selectedDestination = destinations.find(
-//       (item) => item.route === destination
-//     );
-
-//     if (!selectedDestination) {
-//       setError("Please select your destination.");
-//       return;
-//     }
-
-//     if (!checkIn || !checkOut) {
-//       setError("Please select both check-in and check-out dates.");
-//       return;
-//     }
-
-//     if (checkIn < today) {
-//       setError("Check-in date cannot be in the past.");
-//       return;
-//     }
-
-//     if (checkOut <= checkIn) {
-//       setError("Check-out date must be after check-in.");
-//       return;
-//     }
-
-//     const params = new URLSearchParams({
-//       checkIn,
-//       checkOut,
-//       guests,
-//     });
-
-//     router.push(
-//       `${selectedDestination.route}?${params.toString()}`
-//     );
-//   }
-
-//   const fieldClass =
-//     "h-[46px] w-full min-w-0 rounded-md border border-gray-200 bg-white px-3 text-sm text-dark outline-none transition focus:border-primary focus:ring-2 focus:ring-primary/10";
-
-//   const labelClass =
-//     "mb-2 flex items-center gap-2 text-xs font-semibold text-dark";
-
-//   return (
-//     <div className="absolute bottom-0 left-1/2 z-20 w-[calc(100%-24px)] max-w-[1150px] -translate-x-1/2 translate-y-1/2 sm:w-[calc(100%-40px)]">
-//       <form
-//         onSubmit={handleSubmit}
-//         className="mt-5 rounded-xl bg-white p-4 shadow-[0_10px_35px_rgba(0,0,0,0.12)] sm:mt-1 sm:p-5"
-//       >
-//         <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-[1.4fr_1fr_1fr_0.8fr_auto] lg:items-end">
-//           {/* Destination */}
-//           <div className="min-w-0">
-//             <label htmlFor="destination" className={labelClass}>
-//               <MapPin size={16} className="text-secondary" />
-//               Destination
-//             </label>
-
-//             <div className="relative">
-//               <select
-//                 id="destination"
-//                 value={destination}
-//                 onChange={(event) => setDestination(event.target.value)}
-//                 className={`${fieldClass} appearance-none pr-9`}
-//                 required
-//               >
-//                 <option value="" disabled>
-//                   Where are you going?
-//                 </option>
-
-//                 {destinations.map((item) => (
-//                   <option key={item.route} value={item.route}>
-//                     {item.label}
-//                   </option>
-//                 ))}
-//               </select>
-
-//               <ChevronDown
-//                 size={15}
-//                 className="pointer-events-none absolute right-3 top-1/2 -translate-y-1/2 text-gray-400"
-//               />
-//             </div>
-//           </div>
-
-//           {/* Check In */}
-//           <div className="min-w-0">
-//             <label htmlFor="checkIn" className={labelClass}>
-//               <CalendarDays size={16} className="text-secondary" />
-//               Check In
-//             </label>
-
-//             <input
-//               id="checkIn"
-//               type="date"
-//               min={today}
-//               value={checkIn}
-//               onChange={(event) => {
-//                 setCheckIn(event.target.value);
-//                 setError("");
-//               }}
-//               className={fieldClass}
-//               required
-//             />
-//           </div>
-
-//           {/* Check Out */}
-//           <div className="min-w-0">
-//             <label htmlFor="checkOut" className={labelClass}>
-//               <CalendarDays size={16} className="text-secondary" />
-//               Check Out
-//             </label>
-
-//             <input
-//               id="checkOut"
-//               type="date"
-//               min={checkIn || today}
-//               value={checkOut}
-//               onChange={(event) => {
-//                 setCheckOut(event.target.value);
-//                 setError("");
-//               }}
-//               className={fieldClass}
-//               required
-//             />
-//           </div>
-
-//           {/* Guests */}
-//           <div className="min-w-0">
-//             <label htmlFor="guests" className={labelClass}>
-//               Guests
-//             </label>
-
-//             <div className="relative">
-//               <select
-//                 id="guests"
-//                 value={guests}
-//                 onChange={(event) => setGuests(event.target.value)}
-//                 className={`${fieldClass} appearance-none pr-8`}
-//               >
-//                 <option value="1">1 Guest</option>
-//                 <option value="2">2 Guests</option>
-//                 <option value="3">3 Guests</option>
-//                 <option value="4">4 Guests</option>
-//                 <option value="5">5+ Guests</option>
-//               </select>
-
-//               <ChevronDown
-//                 size={15}
-//                 className="pointer-events-none absolute right-3 top-1/2 -translate-y-1/2 text-gray-400"
-//               />
-//             </div>
-//           </div>
-
-//           {/* Search */}
-//           <button
-//             type="submit"
-//             className="inline-flex h-[46px] w-full items-center justify-center gap-2 rounded-full bg-secondary px-7 text-sm font-semibold text-white transition-all duration-300 hover:-translate-y-0.5 hover:bg-secondary-dark lg:w-auto"
-//           >
-//             <Search size={16} />
-//             Search
-//           </button>
-//         </div>
-
-//         {error && (
-//           <p
-//             role="alert"
-//             aria-live="polite"
-//             className="mt-3 text-sm font-medium text-red-600"
-//           >
-//             {error}
-//           </p>
-//         )}
-//       </form>
-//     </div>
-//   );
-// }
-
 
 
 
@@ -247,11 +29,11 @@ const destinations = [
     route: "/india-tours/goa",
     rate: 3000,
   },
-  // {
-  //   label: "Kerala",
-  //   route: "/india-tours/kerala",
-  //   rate: 3500,
-  // },
+  {
+    label: "Kerala",
+    route: "/india-tours/kerala",
+    rate: 3500,
+  },
   {
     label: "Kashmir",
     route: "/india-tours/kashmir",
@@ -267,36 +49,36 @@ const destinations = [
     route: "/india-tours/rajasthan",
     rate: 3200,
   },
-  // {
-  //   label: "Uttarakhand",
-  //   route: "/india-tours/uttarakhand",
-  //   rate: 2800,
-  // },
-  // {
-  //   label: "Andaman Islands",
-  //   route: "/india-tours/andaman-islands",
-  //   rate: 5000,
-  // },
-  // {
-  //   label: "Leh-Ladakh",
-  //   route: "/india-tours/leh-ladakh",
-  //   rate: 4500,
-  // },
-  // {
-  //   label: "Dubai",
-  //   route: "/International/dubai",
-  //   rate: 7000,
-  // },
-  // {
-  //   label: "Thailand",
-  //   route: "/International/thailand",
-  //   rate: 6000,
-  // },
-  // {
-  //   label: "Russia",
-  //   route: "/International/russia",
-  //   rate: 8000,
-  // },
+  {
+    label: "Uttarakhand",
+    route: "/india-tours/uttarakhand",
+    rate: 2800,
+  },
+  {
+    label: "Andaman Islands",
+    route: "/india-tours/andaman-islands",
+    rate: 5000,
+  },
+  {
+    label: "Leh-Ladakh",
+    route: "/india-tours/leh-ladakh",
+    rate: 4500,
+  },
+  {
+    label: "Dubai",
+    route: "/International/dubai",
+    rate: 7000,
+  },
+  {
+    label: "Thailand",
+    route: "/International/thailand",
+    rate: 6000,
+  },
+  {
+    label: "Russia",
+    route: "/International/russia",
+    rate: 8000,
+  },
 ];
 
 function getLocalDate() {
@@ -451,15 +233,23 @@ export default function SearchBox() {
     "mb-2 flex items-center gap-2 text-xs font-semibold text-dark";
 
   const fieldClass =
-    "h-[46px] w-full min-w-0 rounded-lg border border-gray-200 bg-white px-3 text-sm text-dark outline-none transition focus:border-primary focus:ring-2 focus:ring-primary/10";
+  "h-[42px] sm:h-[46px] w-full min-w-0 rounded-lg border border-gray-200 bg-white px-3 text-sm text-dark outline-none transition focus:border-primary focus:ring-2 focus:ring-primary/10";
 
   return (
     <>
       {/* Search Form */}
-      <div className="absolute bottom-0 left-1/2 z-20 w-[calc(100%-24px)] max-w-[1150px] -translate-x-1/2 translate-y-1/2 sm:w-[calc(100%-40px)]">
+      <div className="  absolute bottom-0 left-1/2 z-20
+  w-[calc(100%-20px)] max-w-[1150px]
+  -translate-x-1/2 translate-y-[58%]
+  sm:w-[calc(100%-40px)]
+  sm:translate-y-1/2">
         <form
           onSubmit={handleSubmit}
-          className="mt-20  rounded-xl border border-gray-100 bg-white p-4 shadow-[0_12px_40px_rgba(0,0,0,0.14)] sm:mt-1 sm:p-5 lg:p-6"
+          className=" mt-0 rounded-xl border border-gray-100
+  bg-white p-3
+  shadow-[0_12px_40px_rgba(0,0,0,0.14)]
+  sm:mt-1 sm:p-5
+  lg:p-6"
         >
           <div className="mb-4 flex items-center justify-between gap-3">
             <div>
@@ -476,7 +266,10 @@ export default function SearchBox() {
             </div>
           </div>
 
-          <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-[1.4fr_1fr_1fr_0.8fr_auto] lg:items-end">
+          <div className=" mb-4 grid grid-cols-1 gap-3
+  sm:grid-cols-2 sm:gap-4
+  lg:grid-cols-[1.4fr_1fr_1fr_0.8fr_auto]
+  lg:items-end">
             {/* Destination */}
             <div className="min-w-0">
               <label htmlFor="destination" className={labelClass}>
