@@ -3,17 +3,12 @@
 import Link from "next/link";
 import {
   ArrowRight,
-//   Facebook,
-//   Instagram,
-//   Linkedin,
   Mail,
   MapPin,
   Phone,
-//   Twitter,
 } from "lucide-react";
 
 import { FaInstagramSquare } from "react-icons/fa";
-import { FaTwitter } from "react-icons/fa";
 import { FaFacebook } from "react-icons/fa";
 
 import type { ReactNode, AnchorHTMLAttributes } from "react";
@@ -283,14 +278,17 @@ export default function Footer() {
             <ul className="space-y-4">
               <FooterLink href="/">Home</FooterLink>
               <FooterLink href="/about">About Us</FooterLink>
-              <FooterLink href="/destinations">
+              {/* <FooterLink href="/destinations">
                 Destinations
-              </FooterLink>
-              <FooterLink href="/international">
+              </FooterLink> */}
+              {/* <FooterLink href="/international">
                 International
-              </FooterLink>
-              <FooterLink href="/honeymoon">
+              </FooterLink> */}
+              {/* <FooterLink href="/honeymoon">
                 Honeymoon
+              </FooterLink> */}
+              <FooterLink href="/contact">
+                Contact Us
               </FooterLink>
             </ul>
           </div>
@@ -300,17 +298,19 @@ export default function Footer() {
             <FooterHeading>Quick Links</FooterHeading>
 
             <ul className="space-y-4">
-              <FooterLink href="/">Home</FooterLink>
-              <FooterLink href="/about">About Us</FooterLink>
-              {/* <FooterLink href="/destinations">
-                Destinations
-              </FooterLink> */}
-              <FooterLink href="/international">
+            
+              <FooterLink href="/honeymoon">
+                Honeymoon
+              </FooterLink>
+              <FooterLink href="/india-tours">
+                India Tours
+              </FooterLink>
+              <FooterLink href="/International">
                 International
               </FooterLink>
-              <FooterLink href="/contact">
+              {/* <FooterLink href="/contact">
                 Contact Us
-              </FooterLink>
+              </FooterLink> */}
             </ul>
           </div>
 
