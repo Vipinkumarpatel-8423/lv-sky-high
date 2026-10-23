@@ -76,7 +76,7 @@ export default function Footer() {
       <img
         src="/images/logo/lv-sky-high-logo.png"
         alt="LV SKY HIGH"
-        className="h-auto w-[90px] object-contain"
+        className="h-auto w-[160px] object-contain"
       />
     </Link>
 
@@ -259,7 +259,7 @@ export default function Footer() {
             {/* Social */}
             <div className="mt-5 flex items-center gap-2">
               <SocialIcon href="https://www.facebook.com/share/1H1uyiFRhZ/" target="_blank" label="Facebook">
-                <FaFacebook size={15} />
+                <FaFacebook size={35} />
               </SocialIcon>
 
               {/* <SocialIcon href="#" label="Twitter">
@@ -271,7 +271,7 @@ export default function Footer() {
               </SocialIcon> */}
 
               <SocialIcon href="https://instagram.com/lv_sky_high" target="_blank" label="Instagram">
-                <FaInstagramSquare size={15} />
+                <FaInstagramSquare size={35} />
               </SocialIcon>
             </div>
           </div>
@@ -302,9 +302,9 @@ export default function Footer() {
             <ul className="space-y-4">
               <FooterLink href="/">Home</FooterLink>
               <FooterLink href="/about">About Us</FooterLink>
-              <FooterLink href="/destinations">
+              {/* <FooterLink href="/destinations">
                 Destinations
-              </FooterLink>
+              </FooterLink> */}
               <FooterLink href="/international">
                 International
               </FooterLink>
@@ -321,7 +321,7 @@ export default function Footer() {
             <div className="grid grid-cols-3 gap-2">
               {galleryImages.map((image, index) => (
                 <Link
-                  href="/destinations"
+                  href="/"
                   key={index}
                   className="
                     group
@@ -360,6 +360,8 @@ export default function Footer() {
           </div>
 
         </div>
+
+        
 
         {/* =========================================
             BOTTOM BAR
@@ -405,6 +407,18 @@ export default function Footer() {
             >
               Contact Us
             </Link>
+            {/* Developed By */}
+<p className="text-center text-[12px] text-white/70">
+  Developed by{" "}
+  <a
+    href="https://ymorinnovation.com/"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="font-semibold text-white transition-colors duration-300 hover:text-primary"
+  >
+    YMOR Innovation
+  </a>
+</p>
           </div>
         </div>
 

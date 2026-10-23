@@ -165,7 +165,7 @@ useEffect(() => {
         width={150}
         height={110}
         // priority
-        className="h-auto w-[140px] object-contain sm:w-[150px]"
+        className="h-auto w-[140px] object-contain sm:w-[160px]"
       />
     </Link>
 
@@ -407,7 +407,7 @@ useEffect(() => {
         width={170}
         height={150}
         // priority
-        className="h-auto w-[140px] object-contain sm:w-[150px]"
+        className="h-auto w-[140px] object-contain sm:w-[160px]"
       />
     </Link>
 

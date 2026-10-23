@@ -17,9 +17,8 @@ export default function HomePage() {
     <main>
       <Hero />
       <HolidayTypes/>
-      <AboutSection />
+      {/* <AboutSection /> */}
 
-      <ServicesSection />
       <IndiaTourDestinations />
 
       <section className="bg-white py-14 sm:py-16 lg:py-20">
@@ -44,6 +43,7 @@ export default function HomePage() {
           <InternationalDestinations />
         </div>
       </section>
+      <ServicesSection />
 
       <BestActivities />
       <PopularDestinations />
