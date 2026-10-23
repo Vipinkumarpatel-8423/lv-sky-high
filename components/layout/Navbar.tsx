@@ -4,6 +4,9 @@ import Link from "next/link";
 import { ChevronDown, Menu, Search } from "lucide-react";
 import { useEffect, useState } from "react";
 // import Image from "next/image";
+import { FaInstagramSquare } from "react-icons/fa";
+import { FaFacebook } from "react-icons/fa";
+
 
 interface NavbarProps {
   onMenuClick: () => void;
@@ -119,7 +122,7 @@ useEffect(() => {
               {/* Social */}
               <div className="flex items-center gap-5 font-semibold">
                 <a href="https://www.facebook.com/share/1H1uyiFRhZ/" target="_blank" aria-label="Facebook">
-                  f
+                  <FaFacebook size={20} />
                 </a>
 
                 {/* <a href="https://twitter.com/lv_sky_high" target="_blank" aria-label="Twitter">
@@ -130,7 +133,7 @@ useEffect(() => {
                 </a> */}
 
                 <a href="https://www.instagram.com/lv_sky_high/" target="_blank" aria-label="Instagram">
-                  ◎
+                  <FaInstagramSquare size={20} />
                 </a>
 
                
